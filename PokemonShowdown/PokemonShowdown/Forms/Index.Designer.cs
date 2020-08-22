@@ -96,8 +96,9 @@
             this.textBoxEnterPokemonId.Name = "textBoxEnterPokemonId";
             this.textBoxEnterPokemonId.Size = new System.Drawing.Size(226, 23);
             this.textBoxEnterPokemonId.TabIndex = 1;
-            this.textBoxEnterPokemonId.Text = "Enter Pokémon Id...";
+            this.textBoxEnterPokemonId.Text = "Enter Pokémon Name...";
             this.textBoxEnterPokemonId.Enter += new System.EventHandler(this.textBoxEnterPokemonId_Enter);
+            this.textBoxEnterPokemonId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEnterPokemonId_KeyPress);
             this.textBoxEnterPokemonId.Leave += new System.EventHandler(this.textBoxEnterPokemonId_Leave);
             // 
             // btnShowPokemon

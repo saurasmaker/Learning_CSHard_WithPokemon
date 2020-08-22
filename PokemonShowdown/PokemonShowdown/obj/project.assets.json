@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\albar\\repositorios\\Learning_CSHard_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+      "projectUniqueName": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
       "projectName": "PokemonShowdown",
-      "projectPath": "C:\\Users\\albar\\repositorios\\Learning_CSHard_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+      "projectPath": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
       "packagesPath": "C:\\Users\\albar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\albar\\repositorios\\Learning_CSHard_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
+      "outputPath": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\albar\\AppData\\Roaming\\NuGet\\NuGet.Config",

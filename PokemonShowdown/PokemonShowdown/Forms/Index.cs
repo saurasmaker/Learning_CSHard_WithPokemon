@@ -32,7 +32,7 @@ namespace PokemonShowdown
 
         private void textBoxEnterPokemonId_Enter(object sender, EventArgs e)
         {
-            if (textBoxEnterPokemonId.Text == "Enter Pokémon Id...")
+            if (textBoxEnterPokemonId.Text == "Enter Pokémon Name...")
             {
                 textBoxEnterPokemonId.Text = "";
                 textBoxEnterPokemonId.ForeColor = Color.Black;
@@ -43,8 +43,21 @@ namespace PokemonShowdown
         {
             if (textBoxEnterPokemonId.Text == "")
             {
-                textBoxEnterPokemonId.Text = "Enter Pokémon Id...";
+                textBoxEnterPokemonId.Text = "Enter Pokémon Name...";
                 textBoxEnterPokemonId.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxEnterPokemonId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                OPokemon p = Pokedex.LoadPokemonFromXML(textBoxEnterPokemonId.Text);
+
+                if (p != null)
+                    textBoxShowPokemonData.Text = p.Show();
+                else
+                    MessageBox.Show("Pokémon not finded");
             }
         }
     }
