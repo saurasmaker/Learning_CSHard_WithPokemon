@@ -75,17 +75,17 @@ namespace PokemonShowdown.Pokemon
 
 
         //Methods
-        public void Show()
+        public string Show()
         {
-            Debug.WriteLine("Nombre: " + Name);
-            Debug.WriteLine("Tipo: " + Kind);
-            Debug.WriteLine("Descripción: " + Description);
-            Debug.WriteLine("PS: " + Health);
-            Debug.WriteLine("Ataque: " + Attack);
-            Debug.WriteLine("Ataque Esp: " + SpecialAttack);
-            Debug.WriteLine("Defense: " + Defense);
-            Debug.WriteLine("Defense Esp: " + SpecialDefense);
-            Debug.WriteLine("Velocidad: " + Speed);
+            return (" Nombre: " + Name +
+            "\n Tipo: " + Kind +
+            "\n Descripción: " + Description +
+            "\n PS: " + Health +
+            "\n Ataque: " + Attack +
+            "\n Ataque Esp: " + SpecialAttack +
+            "\n Defense: " + Defense +
+            "\n Defense Esp: " + SpecialDefense +
+            "\n Velocidad: " + Speed);
         }
 
 

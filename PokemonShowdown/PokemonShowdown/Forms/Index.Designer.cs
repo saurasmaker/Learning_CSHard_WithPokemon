@@ -35,12 +35,15 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.textBoxEnterPokemonId = new System.Windows.Forms.TextBox();
+            this.btnShowPokemon = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxShowPokemonData = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -75,7 +78,8 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.textBoxEnterPokemonId);
+            this.splitContainer1.Panel1.Controls.Add(this.btnShowPokemon);
             // 
             // splitContainer1.Panel2
             // 
@@ -85,8 +89,30 @@
             this.splitContainer1.TabIndex = 3;
             this.splitContainer1.Text = "splitContainer1";
             // 
+            // textBoxEnterPokemonId
+            // 
+            this.textBoxEnterPokemonId.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxEnterPokemonId.Location = new System.Drawing.Point(3, 3);
+            this.textBoxEnterPokemonId.Name = "textBoxEnterPokemonId";
+            this.textBoxEnterPokemonId.Size = new System.Drawing.Size(226, 23);
+            this.textBoxEnterPokemonId.TabIndex = 1;
+            this.textBoxEnterPokemonId.Text = "Enter Pokémon Id...";
+            this.textBoxEnterPokemonId.Enter += new System.EventHandler(this.textBoxEnterPokemonId_Enter);
+            this.textBoxEnterPokemonId.Leave += new System.EventHandler(this.textBoxEnterPokemonId_Leave);
+            // 
+            // btnShowPokemon
+            // 
+            this.btnShowPokemon.Location = new System.Drawing.Point(3, 26);
+            this.btnShowPokemon.Name = "btnShowPokemon";
+            this.btnShowPokemon.Size = new System.Drawing.Size(226, 23);
+            this.btnShowPokemon.TabIndex = 0;
+            this.btnShowPokemon.Text = "Show Pokémon";
+            this.btnShowPokemon.UseVisualStyleBackColor = true;
+            this.btnShowPokemon.Click += new System.EventHandler(this.btnShowPokemon_Click);
+            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBoxShowPokemonData);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(454, 250);
@@ -94,14 +120,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Show";
             // 
-            // button1
+            // textBoxShowPokemonData
             // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Show Pokémon";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxShowPokemonData.Enabled = false;
+            this.textBoxShowPokemonData.Location = new System.Drawing.Point(7, 22);
+            this.textBoxShowPokemonData.Name = "textBoxShowPokemonData";
+            this.textBoxShowPokemonData.Size = new System.Drawing.Size(441, 222);
+            this.textBoxShowPokemonData.TabIndex = 0;
+            this.textBoxShowPokemonData.Text = "";
             // 
             // Index
             // 
@@ -116,9 +142,11 @@
             this.Name = "Index";
             this.Text = "Index";
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,8 +158,10 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnShowPokemon;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox textBoxEnterPokemonId;
+        private System.Windows.Forms.RichTextBox textBoxShowPokemonData;
     }
 }
 

@@ -157,7 +157,7 @@ namespace PokemonShowdown.Pokemon
 
         
 
-        public static OPokemon LoadPokemonFromXML(string id)
+        public static OPokemon LoadPokemonFromXML(string name)
         {
             XDocument doc = GetXMLDocument();
             OPokemon pokemon = null;
@@ -166,7 +166,7 @@ namespace PokemonShowdown.Pokemon
             {
                 foreach(XElement e in doc.Root.Elements())
                 {
-                    if (e.Attribute("id").Value.Equals(id))
+                    if (e.Element("name").Value.ToUpper().Equals(name.ToUpper()))
                     {
                         pokemon = new OPokemon();
                         pokemon.Id = e.Attribute("id").Value;
