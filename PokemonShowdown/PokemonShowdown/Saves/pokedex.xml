@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+
+<pokedex>
+
+  <pokemon id = "0">
+    <name>Zero</name>
+    <kind>Zero</kind>
+    <description>Zero</description>
+    <health>0</health>
+    <attack>0</attack>
+    <specialAttack>0</specialAttack>
+    <defense>0</defense>
+    <specialDefense>0</specialDefense>
+    <speed>0</speed>
+  </pokemon>
+  
+	<pokemon id = "1">
+		<name>Bulbasaur</name>
+		<kind>Seed</kind>
+		<description></description>
+		<health>45</health>
+		<attack>49</attack>
+		<specialAttack>65</specialAttack>
+		<defense>49</defense>
+		<specialDefense>65</specialDefense>
+		<speed>45</speed>
+	</pokemon>
+
+  <pokemon id = "2">
+    <name>Ivysaur</name>
+    <kind>Seed</kind>
+    <description></description>
+    <health>45</health>
+    <attack>49</attack>
+    <specialAttack>65</specialAttack>
+    <defense>49</defense>
+    <specialDefense>65</specialDefense>
+    <speed>45</speed>
+  </pokemon>
+
+  <pokemon id = "3">
+    <name>Venusaur</name>
+    <kind>Seed</kind>
+    <description></description>
+    <health>45</health>
+    <attack>49</attack>
+    <specialAttack>65</specialAttack>
+    <defense>49</defense>
+    <specialDefense>65</specialDefense>
+    <speed>45</speed>
+  </pokemon>
+	
+</pokedex>
