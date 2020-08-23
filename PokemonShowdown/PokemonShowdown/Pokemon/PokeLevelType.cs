@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PokemonShowdown.Pokemon
 {
-    class PokeLevel
+    class PokeLevelType
     {
         public static byte Fast = 0;
         public static byte Medium = 1;

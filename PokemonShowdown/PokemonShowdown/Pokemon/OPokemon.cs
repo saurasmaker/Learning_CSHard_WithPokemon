@@ -1,34 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Security.Policy;
 using System.Text;
 
 namespace PokemonShowdown.Pokemon
 {
     class OPokemon
     {
-        #region Static Attributes
-        //Static Attributes     
-        
-        #endregion
 
         #region Attributes
         public string Id { get; set; }
         public string Name { get; set; }
-        public string Kind { get; set; }
-        private string description;
+        public string Category { get; set; }
+        public ushort Height { get; set; }
+        public ushort Weight { get; set; }
+        
         public byte Health { get; set; }
         public byte Attack { get; set; }
         public byte SpecialAttack { get; set; }
         public byte Defense { get; set; }
         public byte SpecialDefense { get; set; }
         public byte Speed { get; set; }
-        public byte Level { get; set; }
-        public ulong Experience { get; set; }
 
-        private byte[] types;
+        private string description;
+        private sbyte[] types;
+        private byte[] abilities;
         private byte[] givedEVs;
+        private byte[] genres;
         private byte levelType;
+
 
 
         #endregion
@@ -36,6 +37,10 @@ namespace PokemonShowdown.Pokemon
         #region Constructors
         public OPokemon()
         {
+            Types = new sbyte[2] { 0, 0 };
+            GivedEVs = new byte[6] { 0, 0, 0, 0, 0, 0 };
+            Genres = new byte[2] { 0, 0 };
+            Abilities = new byte[3] { 0, 0, 0 };
         }
         #endregion
 
@@ -43,7 +48,7 @@ namespace PokemonShowdown.Pokemon
         public string Show()
         {
             return (" Nombre: " + Name +
-            "\n Tipo: " + Kind +
+            "\n Tipo: " + Category +
             "\n Descripción: " + Description +
             "\n PS: " + Health +
             "\n Ataque: " + Attack +
@@ -53,162 +58,19 @@ namespace PokemonShowdown.Pokemon
             "\n Velocidad: " + Speed);
         }
 
-            #region LevelCalculator
-        public byte LevelCalculator(byte lvlType)
-        {
-            return lvlType switch
-            {
-                0 => FastLevelCalculator(),
-                1 => MediumLevelCalculator(),
-                2 => SlowLevelCalculator(),
-                3 => ParabolicLevelCalculator(),
-                4 => ErraticLevelCalculator(),
-                5 => FluctuatingLevelCalculator(),
-                _ => 0,
-            };
-        }
 
 
-        private byte FastLevelCalculator() //Fórmula: E = 4 * n^3 / 5
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if ((newExp -= (ulong)(Math.Pow(n, 3) * 4 / 5)) <= 0)
-            {
-                Experience = newExp;
-                return n;
-            }
-
-            return Level;
-        }
-
-        private byte MediumLevelCalculator() //Fórmula: E = n^3
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if ((newExp -= (ulong)Math.Pow(Level + 1, 3)) <= 0)
-            {
-                Experience = newExp;
-                return n;
-            }
-
-            return Level;
-        }
-
-        private byte SlowLevelCalculator() //Fórmula: E = 5 * n^3 / 4
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if ((newExp -= (ulong)Math.Pow(n, 3) * 5 / 4) <= 0)
-            {
-                Experience = newExp;
-                return n;
-            }
-
-            return Level;
-        }
-
-        private byte ParabolicLevelCalculator() //Fórmula: E = 6/5*n^3 − 15*n^2 + 100*n − 140
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if ((newExp -= (ulong)((6 / 5 * Math.Pow(n, 3)) - (15 * Math.Pow(n, 2)) + (100 * n) - 140)) <= 0)
-            {
-                Experience = newExp;
-                return n;
-            }
-
-            return Level;
-        }
-
-        private byte ErraticLevelCalculator()
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if (0 < n && n <= 50)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * (2 - (0.02 * n)))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            else if (51 <= n && n <= 68)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * (1.5 - (0.01 * n)))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            else if (69 <= n && n <= 98)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * (1.274 - (0.02 * n / 3) - (n % 3)))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            else if (99 <= n && n <= 100)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * (1.6 - (0.01 * n)))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            return Level;
-        }
-
-        private byte FluctuatingLevelCalculator()
-        {
-            byte n = (byte)(Level + 1);
-            ulong newExp = Experience;
-
-            if (0 < n && n <= 15)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * ((24 + ((n + 1) / 3)) / 50))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            else if (16 <= n && n <= 35)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * ((14 + n) / 50))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            else if (36 <= n && n <= 100)
-            {
-                if ((newExp -= (ulong)(Math.Pow(n, 3) * ((32 + (n / 2)) / 50))) <= 0)
-                {
-                    Experience = newExp;
-                    return n;
-                }
-            }
-
-            return Level;
-        }
         #endregion
 
+        #region Static Methods
+        public static OPokemon Zero()
+        {
+
+            return null;
+        }
         #endregion
 
         #region Getters && Setters
-       
 
         public string Description
         {
@@ -216,25 +78,8 @@ namespace PokemonShowdown.Pokemon
             set { if(value.Length < 1000) description = value; }
         }
 
-        
-
-        public byte[] EVs
+        public sbyte[] Types
         {
-            get { return givedEVs; }
-            set
-            {
-                for (byte i = 0; 0 < 5; ++i)
-                    if (value[i] > 255)
-                    {
-                        Console.WriteLine("Not valid EVs {0} in position {1}", StatNames[i], i);
-                        return;
-                    }
-                    else givedEVs[i] = value[i];
-
-            }
-        }
-
-        public byte[] Types { 
             get
             {
                 return types;
@@ -246,14 +91,69 @@ namespace PokemonShowdown.Pokemon
 
                 if (value[1] < 0 || value[1] > 17)
                     Debug.WriteLine("Type 2 Invalid.");
+
+                else
+                    types = value;
             }
         }
 
-        public byte GetLevelType()
-        { return levelType; }
+        public byte[] Abilities
+        {
+            get
+            {
+                return abilities;
+            }
+            set
+            {
+                abilities = value;
+            }
+        }
 
-        public void SetLevelType(byte value)
-        { if (value < 6) levelType = value; else Console.WriteLine("Not valid Level type value"); }
+        public byte[] GivedEVs
+        {
+            get { return givedEVs; }
+            set
+            {
+                givedEVs = new byte[6] { 0, 0, 0, 0, 0, 0 };
+
+                for (byte i = 0; i < 6; ++i)
+                    if (value[i] > 255)
+                    {
+                        Console.WriteLine("Not valid EVs {0} in position {1}", PokeStat.StatsNames[i], i);
+                        return;
+                    }
+                    else { 
+                        givedEVs[i] = value[i]; 
+                    }
+
+            }
+        }
+
+        public byte[] Genres
+        {
+            get
+            {
+                return genres;
+            }
+            set
+            {
+                genres = value;
+            }
+        }
+
+        public byte LevelType { 
+            get 
+            { 
+                return levelType; 
+            }
+            set
+            { 
+                if (value < 6) levelType = value; 
+                else Console.WriteLine("Not valid Level type value"); 
+            }
+        }
+
+        
         
         
         #endregion

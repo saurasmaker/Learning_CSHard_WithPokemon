@@ -16,6 +16,15 @@ namespace PokemonShowdown.Forms.PokedexTools
             InitializeComponent();
         }
 
+        private void ShowPokemon()
+        {
+            OPokemon p = Pokedex.LoadPokemonFromPokedexXML(textBoxSearchPoke.Text);
+            if (p != null)
+                richTextBoxShowPoke.Text = p.Show();
+
+            else
+                MessageBox.Show(textBoxSearchPoke.Text + "Not Finded");
+        }
 
         #region textBoxSearchPokeTools
         private void textBoxSearchPoke_Enter(object sender, EventArgs e)
@@ -38,14 +47,14 @@ namespace PokemonShowdown.Forms.PokedexTools
         #endregion
 
         private void btnSearchPoke_Click(object sender, EventArgs e)
-        {       
-            richTextBoxShowPoke.Text = Pokedex.LoadPokemonFromXML(textBoxSearchPoke.Text).Show();
+        {
+            ShowPokemon();
         }
 
         private void textBoxSearchPoke_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == (char)13)
-                richTextBoxShowPoke.Text = Pokedex.LoadPokemonFromXML(textBoxSearchPoke.Text).Show();            
+             ShowPokemon();
         }
     }
 }

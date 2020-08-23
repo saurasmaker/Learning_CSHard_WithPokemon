@@ -35,7 +35,7 @@ namespace PokemonShowdown.Pokemon
                 for (byte i = 0; 0 < 5; ++i)
                     if (value[i] > 255)
                     {
-                        Console.WriteLine("Not valid EVs {0} in position {1}", StatNames[i], i);
+                        Console.WriteLine("Not valid EVs {0} in position {1}", PokeStat.StatsNames[i], i);
                         return;
                     }
                     else iVs[i] = value[i];
