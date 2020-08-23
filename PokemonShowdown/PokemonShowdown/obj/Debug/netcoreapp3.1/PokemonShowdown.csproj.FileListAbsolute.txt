@@ -20,7 +20,6 @@ C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonS
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.dll
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.pdb
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csprojAssemblyReference.cache
-C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Index.resources
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csproj.GenerateResource.cache
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.AssemblyInfoInputs.cache
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonS
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.dll
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.pdb
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.genruntimeconfig.cache
+C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.Index.resources

@@ -1,14 +1,14 @@
-﻿namespace PokemonShowdown
+﻿namespace PokemonShowdown.Forms
 {
     partial class Index
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -20,134 +20,274 @@
             base.Dispose(disposing);
         }
 
-
-
-
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.textBoxEnterPokemonId = new System.Windows.Forms.TextBox();
-            this.btnShowPokemon = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxShowPokemonData = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelTeamsSubmenu = new System.Windows.Forms.Panel();
+            this.btnRemoveTeam = new System.Windows.Forms.Button();
+            this.btnEditTeam = new System.Windows.Forms.Button();
+            this.btnCreateTeam = new System.Windows.Forms.Button();
+            this.btnTeams = new System.Windows.Forms.Button();
+            this.panelPokedexToolsSubmenu = new System.Windows.Forms.Panel();
+            this.btnShowPokedex = new System.Windows.Forms.Button();
+            this.btnRemovePokeFromPokedex = new System.Windows.Forms.Button();
+            this.btnUpdatePokeFromPokedex = new System.Windows.Forms.Button();
+            this.btnAddPokeToPokedex = new System.Windows.Forms.Button();
+            this.btnShowPokeFromPokedex = new System.Windows.Forms.Button();
+            this.btnPokedexTools = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelLeft.SuspendLayout();
+            this.panelTeamsSubmenu.SuspendLayout();
+            this.panelPokedexToolsSubmenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip
-            // 
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(696, 25);
-            this.toolStrip.TabIndex = 0;
-            this.toolStrip.Text = "toolStrip";
             // 
             // statusStrip
             // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 305);
+            this.statusStrip.Location = new System.Drawing.Point(0, 652);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(696, 22);
-            this.statusStrip.TabIndex = 1;
-            this.statusStrip.Text = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip.TabIndex = 0;
+            this.statusStrip.Text = "statusStrip1";
             // 
             // menuStrip
             // 
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(696, 24);
-            this.menuStrip.TabIndex = 2;
-            this.menuStrip.Text = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip.TabIndex = 1;
+            this.menuStrip.Text = "menuStrip1";
             // 
-            // splitContainer1
+            // toolStrip
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 49);
-            this.splitContainer1.Name = "splitContainer1";
+            this.toolStrip.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip.TabIndex = 2;
+            this.toolStrip.Text = "toolStrip1";
             // 
-            // splitContainer1.Panel1
+            // panelLeft
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.textBoxEnterPokemonId);
-            this.splitContainer1.Panel1.Controls.Add(this.btnShowPokemon);
+            this.panelLeft.AutoScroll = true;
+            this.panelLeft.Controls.Add(this.panelTeamsSubmenu);
+            this.panelLeft.Controls.Add(this.btnTeams);
+            this.panelLeft.Controls.Add(this.panelPokedexToolsSubmenu);
+            this.panelLeft.Controls.Add(this.btnPokedexTools);
+            this.panelLeft.Controls.Add(this.panelLogo);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 49);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(250, 603);
+            this.panelLeft.TabIndex = 3;
             // 
-            // splitContainer1.Panel2
+            // panelTeamsSubmenu
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(696, 256);
-            this.splitContainer1.SplitterDistance = 232;
-            this.splitContainer1.TabIndex = 3;
-            this.splitContainer1.Text = "splitContainer1";
+            this.panelTeamsSubmenu.Controls.Add(this.btnRemoveTeam);
+            this.panelTeamsSubmenu.Controls.Add(this.btnEditTeam);
+            this.panelTeamsSubmenu.Controls.Add(this.btnCreateTeam);
+            this.panelTeamsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTeamsSubmenu.Location = new System.Drawing.Point(0, 397);
+            this.panelTeamsSubmenu.Name = "panelTeamsSubmenu";
+            this.panelTeamsSubmenu.Size = new System.Drawing.Size(250, 125);
+            this.panelTeamsSubmenu.TabIndex = 2;
             // 
-            // textBoxEnterPokemonId
+            // btnRemoveTeam
             // 
-            this.textBoxEnterPokemonId.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxEnterPokemonId.Location = new System.Drawing.Point(3, 3);
-            this.textBoxEnterPokemonId.Name = "textBoxEnterPokemonId";
-            this.textBoxEnterPokemonId.Size = new System.Drawing.Size(226, 23);
-            this.textBoxEnterPokemonId.TabIndex = 1;
-            this.textBoxEnterPokemonId.Text = "Enter Pokémon Name...";
-            this.textBoxEnterPokemonId.Enter += new System.EventHandler(this.textBoxEnterPokemonId_Enter);
-            this.textBoxEnterPokemonId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEnterPokemonId_KeyPress);
-            this.textBoxEnterPokemonId.Leave += new System.EventHandler(this.textBoxEnterPokemonId_Leave);
+            this.btnRemoveTeam.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRemoveTeam.FlatAppearance.BorderSize = 0;
+            this.btnRemoveTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveTeam.Location = new System.Drawing.Point(0, 80);
+            this.btnRemoveTeam.Name = "btnRemoveTeam";
+            this.btnRemoveTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnRemoveTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnRemoveTeam.TabIndex = 0;
+            this.btnRemoveTeam.Text = "Remove Team";
+            this.btnRemoveTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemoveTeam.UseVisualStyleBackColor = true;
             // 
-            // btnShowPokemon
+            // btnEditTeam
             // 
-            this.btnShowPokemon.Location = new System.Drawing.Point(3, 26);
-            this.btnShowPokemon.Name = "btnShowPokemon";
-            this.btnShowPokemon.Size = new System.Drawing.Size(226, 23);
-            this.btnShowPokemon.TabIndex = 0;
-            this.btnShowPokemon.Text = "Show Pokémon";
-            this.btnShowPokemon.UseVisualStyleBackColor = true;
-            this.btnShowPokemon.Click += new System.EventHandler(this.btnShowPokemon_Click);
+            this.btnEditTeam.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEditTeam.FlatAppearance.BorderSize = 0;
+            this.btnEditTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditTeam.Location = new System.Drawing.Point(0, 40);
+            this.btnEditTeam.Name = "btnEditTeam";
+            this.btnEditTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnEditTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnEditTeam.TabIndex = 0;
+            this.btnEditTeam.Text = "Edit Team";
+            this.btnEditTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditTeam.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // btnCreateTeam
             // 
-            this.groupBox1.Controls.Add(this.textBoxShowPokemonData);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(454, 250);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Show";
+            this.btnCreateTeam.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCreateTeam.FlatAppearance.BorderSize = 0;
+            this.btnCreateTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateTeam.Location = new System.Drawing.Point(0, 0);
+            this.btnCreateTeam.Name = "btnCreateTeam";
+            this.btnCreateTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCreateTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnCreateTeam.TabIndex = 0;
+            this.btnCreateTeam.Text = "Create Team";
+            this.btnCreateTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateTeam.UseVisualStyleBackColor = true;
             // 
-            // textBoxShowPokemonData
+            // btnTeams
             // 
-            this.textBoxShowPokemonData.Enabled = false;
-            this.textBoxShowPokemonData.Location = new System.Drawing.Point(7, 22);
-            this.textBoxShowPokemonData.Name = "textBoxShowPokemonData";
-            this.textBoxShowPokemonData.Size = new System.Drawing.Size(441, 222);
-            this.textBoxShowPokemonData.TabIndex = 0;
-            this.textBoxShowPokemonData.Text = "";
+            this.btnTeams.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTeams.FlatAppearance.BorderSize = 0;
+            this.btnTeams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeams.Location = new System.Drawing.Point(0, 352);
+            this.btnTeams.Name = "btnTeams";
+            this.btnTeams.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTeams.Size = new System.Drawing.Size(250, 45);
+            this.btnTeams.TabIndex = 0;
+            this.btnTeams.Text = "Teams";
+            this.btnTeams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTeams.UseVisualStyleBackColor = true;
+            this.btnTeams.Click += new System.EventHandler(this.btnTeams_Click);
+            // 
+            // panelPokedexToolsSubmenu
+            // 
+            this.panelPokedexToolsSubmenu.Controls.Add(this.btnShowPokedex);
+            this.panelPokedexToolsSubmenu.Controls.Add(this.btnRemovePokeFromPokedex);
+            this.panelPokedexToolsSubmenu.Controls.Add(this.btnUpdatePokeFromPokedex);
+            this.panelPokedexToolsSubmenu.Controls.Add(this.btnAddPokeToPokedex);
+            this.panelPokedexToolsSubmenu.Controls.Add(this.btnShowPokeFromPokedex);
+            this.panelPokedexToolsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPokedexToolsSubmenu.Location = new System.Drawing.Point(0, 145);
+            this.panelPokedexToolsSubmenu.Name = "panelPokedexToolsSubmenu";
+            this.panelPokedexToolsSubmenu.Size = new System.Drawing.Size(250, 207);
+            this.panelPokedexToolsSubmenu.TabIndex = 1;
+            // 
+            // btnShowPokedex
+            // 
+            this.btnShowPokedex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShowPokedex.FlatAppearance.BorderSize = 0;
+            this.btnShowPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPokedex.Location = new System.Drawing.Point(0, 160);
+            this.btnShowPokedex.Name = "btnShowPokedex";
+            this.btnShowPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnShowPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnShowPokedex.TabIndex = 0;
+            this.btnShowPokedex.Text = "Show Pokédex";
+            this.btnShowPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShowPokedex.UseVisualStyleBackColor = true;
+            // 
+            // btnRemovePokeFromPokedex
+            // 
+            this.btnRemovePokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRemovePokeFromPokedex.FlatAppearance.BorderSize = 0;
+            this.btnRemovePokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemovePokeFromPokedex.Location = new System.Drawing.Point(0, 120);
+            this.btnRemovePokeFromPokedex.Name = "btnRemovePokeFromPokedex";
+            this.btnRemovePokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnRemovePokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnRemovePokeFromPokedex.TabIndex = 0;
+            this.btnRemovePokeFromPokedex.Text = "Remove Pokémon";
+            this.btnRemovePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemovePokeFromPokedex.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdatePokeFromPokedex
+            // 
+            this.btnUpdatePokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUpdatePokeFromPokedex.FlatAppearance.BorderSize = 0;
+            this.btnUpdatePokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdatePokeFromPokedex.Location = new System.Drawing.Point(0, 80);
+            this.btnUpdatePokeFromPokedex.Name = "btnUpdatePokeFromPokedex";
+            this.btnUpdatePokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnUpdatePokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnUpdatePokeFromPokedex.TabIndex = 0;
+            this.btnUpdatePokeFromPokedex.Text = "Update Pokémon";
+            this.btnUpdatePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdatePokeFromPokedex.UseVisualStyleBackColor = true;
+            // 
+            // btnAddPokeToPokedex
+            // 
+            this.btnAddPokeToPokedex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddPokeToPokedex.FlatAppearance.BorderSize = 0;
+            this.btnAddPokeToPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPokeToPokedex.Location = new System.Drawing.Point(0, 40);
+            this.btnAddPokeToPokedex.Name = "btnAddPokeToPokedex";
+            this.btnAddPokeToPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAddPokeToPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnAddPokeToPokedex.TabIndex = 0;
+            this.btnAddPokeToPokedex.Text = "Add Pokémon";
+            this.btnAddPokeToPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddPokeToPokedex.UseVisualStyleBackColor = true;
+            // 
+            // btnShowPokeFromPokedex
+            // 
+            this.btnShowPokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShowPokeFromPokedex.FlatAppearance.BorderSize = 0;
+            this.btnShowPokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPokeFromPokedex.Location = new System.Drawing.Point(0, 0);
+            this.btnShowPokeFromPokedex.Name = "btnShowPokeFromPokedex";
+            this.btnShowPokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnShowPokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnShowPokeFromPokedex.TabIndex = 0;
+            this.btnShowPokeFromPokedex.Text = "Show Pokémon";
+            this.btnShowPokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShowPokeFromPokedex.UseVisualStyleBackColor = true;
+            // 
+            // btnPokedexTools
+            // 
+            this.btnPokedexTools.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPokedexTools.FlatAppearance.BorderSize = 0;
+            this.btnPokedexTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPokedexTools.Location = new System.Drawing.Point(0, 100);
+            this.btnPokedexTools.Name = "btnPokedexTools";
+            this.btnPokedexTools.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPokedexTools.Size = new System.Drawing.Size(250, 45);
+            this.btnPokedexTools.TabIndex = 0;
+            this.btnPokedexTools.Text = "Pokédex Tools";
+            this.btnPokedexTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPokedexTools.UseVisualStyleBackColor = true;
+            this.btnPokedexTools.Click += new System.EventHandler(this.btnPokedexTools_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(250, 100);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(250, 49);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(550, 603);
+            this.panelMain.TabIndex = 4;
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 327);
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.statusStrip);
+            this.ClientSize = new System.Drawing.Size(800, 674);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.toolStrip);
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Index";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Index";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.panelLeft.ResumeLayout(false);
+            this.panelTeamsSubmenu.ResumeLayout(false);
+            this.panelPokedexToolsSubmenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,14 +295,23 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Button btnShowPokemon;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBoxEnterPokemonId;
-        private System.Windows.Forms.RichTextBox textBoxShowPokemonData;
+        private System.Windows.Forms.ToolStrip toolStrip;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Button btnPokedexTools;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Panel panelPokedexToolsSubmenu;
+        private System.Windows.Forms.Button btnShowPokeFromPokedex;
+        private System.Windows.Forms.Button btnAddPokeToPokedex;
+        private System.Windows.Forms.Button btnUpdatePokeFromPokedex;
+        private System.Windows.Forms.Button btnRemovePokeFromPokedex;
+        private System.Windows.Forms.Button btnTeams;
+        private System.Windows.Forms.Button btnShowPokedex;
+        private System.Windows.Forms.Panel panelTeamsSubmenu;
+        private System.Windows.Forms.Button btnRemoveTeam;
+        private System.Windows.Forms.Button btnEditTeam;
+        private System.Windows.Forms.Button btnCreateTeam;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
-

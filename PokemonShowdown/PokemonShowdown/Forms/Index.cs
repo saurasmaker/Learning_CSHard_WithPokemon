@@ -1,64 +1,60 @@
-﻿using PokemonShowdown.Pokemon;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
-namespace PokemonShowdown
+namespace PokemonShowdown.Forms
 {
     public partial class Index : Form
     {
         public Index()
         {
             InitializeComponent();
+            HideSubMenus();
         }
 
-        private void btnShowPokemon_Click(object sender, EventArgs e)
-        {
        
-            OPokemon p = Pokedex.LoadPokemonFromXML(textBoxEnterPokemonId.Text);
-                
-            if(p!=null)
-                textBoxShowPokemonData.Text = p.Show();
-            else
-                MessageBox.Show("Pokémon not finded");
 
-        }
-
-        private void textBoxEnterPokemonId_Enter(object sender, EventArgs e)
+        private void btnPokedexTools_Click(object sender, EventArgs e)
         {
-            if (textBoxEnterPokemonId.Text == "Enter Pokémon Name...")
-            {
-                textBoxEnterPokemonId.Text = "";
-                textBoxEnterPokemonId.ForeColor = Color.Black;
-            }
+            ShowSubmenu(panelPokedexToolsSubmenu);
         }
 
-        private void textBoxEnterPokemonId_Leave(object sender, EventArgs e)
+        private void btnTeams_Click(object sender, EventArgs e)
         {
-            if (textBoxEnterPokemonId.Text == "")
-            {
-                textBoxEnterPokemonId.Text = "Enter Pokémon Name...";
-                textBoxEnterPokemonId.ForeColor = Color.Gray;
-            }
+            ShowSubmenu(panelTeamsSubmenu);
+
         }
 
-        private void textBoxEnterPokemonId_KeyPress(object sender, KeyPressEventArgs e)
+        private void OpenChildForm()
         {
-            if (e.KeyChar == (char)13)
-            {
-                OPokemon p = Pokedex.LoadPokemonFromXML(textBoxEnterPokemonId.Text);
 
-                if (p != null)
-                    textBoxShowPokemonData.Text = p.Show();
-                else
-                    MessageBox.Show("Pokémon not finded");
-            }
+
         }
+
+        #region SubmenuTools
+        private void HideSubMenus()
+        {
+            panelPokedexToolsSubmenu.Visible = false;
+            panelTeamsSubmenu.Visible = false;
+        }
+
+
+        private void ShowSubmenu(Panel subMenu)
+        {
+            if (subMenu.Visible != true)
+            {
+                HideSubMenus();
+                subMenu.Visible = true;
+            }
+            else subMenu.Visible = false;
+
+        }
+        #endregion
+
     }
 }
