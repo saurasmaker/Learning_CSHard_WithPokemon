@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<team>
+  <description>
+  </description>
+
+  <pokemon pos = "0"></pokemon>
+  <pokemon pos = "1"></pokemon>
+  <pokemon pos = "2"></pokemon>
+  <pokemon pos = "3"></pokemon>
+  <pokemon pos = "4"></pokemon>
+  <pokemon pos = "5"></pokemon>
+   
+</team>

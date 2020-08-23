@@ -3,51 +3,50 @@
 <pokedex>
 
   <pokemon id = "0">
+    
+    <!-- Description care attributes -->
     <name>Zero</name>
-    <kind>Zero</kind>
+    <category>Zero</category>
     <description>Zero</description>
+    <height>0</height>
+    <weight>0</weight>
+    
+    <!-- Combat care attributes -->
+    <types> 
+      <type>0</type>
+      <type>-1</type>  <!-- if Type is -1 it means it has no type -->
+    </types> 
+    
     <health>0</health>
     <attack>0</attack>
     <specialAttack>0</specialAttack>
     <defense>0</defense>
     <specialDefense>0</specialDefense>
     <speed>0</speed>
+    
+    <abilities>
+      <ability>0</ability>
+      <ability>0</ability>
+      <hidden>0</hidden>
+    </abilities>
+    
+    <!-- Other attributes -->
+    <genres>
+      <masc>50</masc>
+      <fem>50</fem>
+    </genres>
+    
+    <levelType>0</levelType>
+    
+    <healthEV>0</healthEV>
+    <attackEV>0</attackEV>
+    <specialAttackEV>0</specialAttackEV>
+    <defenseEV>0</defenseEV>
+    <specialDefenseEV>0</specialDefenseEV>
+    <speedEV>0</speedEV>
+  
   </pokemon>
   
-	<pokemon id = "1">
-		<name>Bulbasaur</name>
-		<kind>Seed</kind>
-		<description></description>
-		<health>45</health>
-		<attack>49</attack>
-		<specialAttack>65</specialAttack>
-		<defense>49</defense>
-		<specialDefense>65</specialDefense>
-		<speed>45</speed>
-	</pokemon>
-
-  <pokemon id = "2">
-    <name>Ivysaur</name>
-    <kind>Seed</kind>
-    <description></description>
-    <health>45</health>
-    <attack>49</attack>
-    <specialAttack>65</specialAttack>
-    <defense>49</defense>
-    <specialDefense>65</specialDefense>
-    <speed>45</speed>
-  </pokemon>
-
-  <pokemon id = "3">
-    <name>Venusaur</name>
-    <kind>Seed</kind>
-    <description></description>
-    <health>45</health>
-    <attack>49</attack>
-    <specialAttack>65</specialAttack>
-    <defense>49</defense>
-    <specialDefense>65</specialDefense>
-    <speed>45</speed>
-  </pokemon>
+	
 	
 </pokedex>

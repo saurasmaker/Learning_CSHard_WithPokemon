@@ -29,23 +29,66 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSearchPoke = new System.Windows.Forms.Button();
+            this.textBoxSearchPoke = new System.Windows.Forms.TextBox();
+            this.richTextBoxShowPoke = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(297, 166);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Show Pokémon";
             // 
+            // btnSearchPoke
+            // 
+            this.btnSearchPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearchPoke.Location = new System.Drawing.Point(12, 27);
+            this.btnSearchPoke.Name = "btnSearchPoke";
+            this.btnSearchPoke.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchPoke.TabIndex = 1;
+            this.btnSearchPoke.Text = "Buscar";
+            this.btnSearchPoke.UseVisualStyleBackColor = true;
+            this.btnSearchPoke.Click += new System.EventHandler(this.btnSearchPoke_Click);
+            // 
+            // textBoxSearchPoke
+            // 
+            this.textBoxSearchPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxSearchPoke.ForeColor = System.Drawing.Color.DarkGray;
+            this.textBoxSearchPoke.Location = new System.Drawing.Point(93, 28);
+            this.textBoxSearchPoke.Name = "textBoxSearchPoke";
+            this.textBoxSearchPoke.Size = new System.Drawing.Size(210, 23);
+            this.textBoxSearchPoke.TabIndex = 2;
+            this.textBoxSearchPoke.Text = "Enter the name of a pokémon...";
+            this.textBoxSearchPoke.Enter += new System.EventHandler(this.textBoxSearchPoke_Enter);
+            this.textBoxSearchPoke.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearchPoke_KeyPress);
+            this.textBoxSearchPoke.Leave += new System.EventHandler(this.textBoxSearchPoke_Leave);
+            // 
+            // richTextBoxShowPoke
+            // 
+            this.richTextBoxShowPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.richTextBoxShowPoke.Location = new System.Drawing.Point(12, 55);
+            this.richTextBoxShowPoke.Name = "richTextBoxShowPoke";
+            this.richTextBoxShowPoke.ReadOnly = true;
+            this.richTextBoxShowPoke.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBoxShowPoke.Size = new System.Drawing.Size(291, 380);
+            this.richTextBoxShowPoke.TabIndex = 3;
+            this.richTextBoxShowPoke.Text = "";
+            // 
             // ShowPokemonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(315, 447);
+            this.Controls.Add(this.richTextBoxShowPoke);
+            this.Controls.Add(this.textBoxSearchPoke);
+            this.Controls.Add(this.btnSearchPoke);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowPokemonForm";
             this.Text = "ShowPokemonForm";
             this.ResumeLayout(false);
@@ -56,5 +99,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSearchPoke;
+        private System.Windows.Forms.TextBox textBoxSearchPoke;
+        private System.Windows.Forms.RichTextBox richTextBoxShowPoke;
     }
 }

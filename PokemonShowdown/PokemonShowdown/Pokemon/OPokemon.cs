@@ -7,74 +7,39 @@ namespace PokemonShowdown.Pokemon
 {
     class OPokemon
     {
-        //Static Structs
-        public struct Stat
-        {
-            public static int health = 0;
-            public static int attack = 1;
-            public static int espAttack = 2;
-            public static int defense = 3;
-            public static int espDefense = 4;
-            public static int speed = 5;      
-        }
-
-        public struct Type
-        {
-            public static int normal = 0;
-            public static int fighting = 1;
-            public static int flying = 2;
-            public static int poison = 3;
-            public static int ground = 4;
-            public static int rock = 5;
-            public static int bug = 6;
-            public static int ghost = 7;
-            public static int steel = 8;
-            public static int fire = 9;
-            public static int water = 10;
-            public static int grass = 11;
-            public static int electric = 12;
-            public static int psychic = 13;
-            public static int ice = 14;
-            public static int dragon = 15;
-            public static int dark = 16;
-            public static int fairy = 17;
-        }
-
-        public struct LevelType
-        {
-            public static int fast = 0;
-            public static int medium = 1;
-            public static int slow = 2;
-            public static int parabolic = 3;
-            public static int erratic = 4;
-            public static int fluctuating = 5;
-        }
-
+        #region Static Attributes
         //Static Attributes     
-        public static string[] StatNames = new string[] {"health", "attack", "specialAttack", "defense", "specialDefense", "speed" };
-        public static string[] TypeNames = new string[] { 
-            "normal", "fighting", "flying", "poison", "ground", "rock", "bug", "ghost", "steel", "fire", "water",
-            "grass", "electric", "psychic", "ice", "dragon", "dark", "fairy" 
-        };
         
-        
-        
-        //Attributes
-        private string description;
-        private byte[] iVs;
-        private byte[] eVs;
+        #endregion
 
+        #region Attributes
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Kind { get; set; }
+        private string description;
+        public byte Health { get; set; }
+        public byte Attack { get; set; }
+        public byte SpecialAttack { get; set; }
+        public byte Defense { get; set; }
+        public byte SpecialDefense { get; set; }
+        public byte Speed { get; set; }
+        public byte Level { get; set; }
+        public ulong Experience { get; set; }
+
+        private byte[] types;
+        private byte[] givedEVs;
         private byte levelType;
 
 
+        #endregion
 
-        //Constructors
+        #region Constructors
         public OPokemon()
         {
         }
+        #endregion
 
-
-        //Methods
+        #region Methods
         public string Show()
         {
             return (" Nombre: " + Name +
@@ -88,7 +53,7 @@ namespace PokemonShowdown.Pokemon
             "\n Velocidad: " + Speed);
         }
 
-
+            #region LevelCalculator
         public byte LevelCalculator(byte lvlType)
         {
             return lvlType switch
@@ -238,17 +203,12 @@ namespace PokemonShowdown.Pokemon
 
             return Level;
         }
+        #endregion
 
+        #endregion
 
-
-
-
-
-        //Getters && Setters
-        public string Id { get; set; }
-        public string Name { get; set; }
-
-        public string Kind { get; set; }
+        #region Getters && Setters
+       
 
         public string Description
         {
@@ -256,39 +216,11 @@ namespace PokemonShowdown.Pokemon
             set { if(value.Length < 1000) description = value; }
         }
 
-        public byte Health { get; set; }
-
-        public byte Attack { get; set; }
-
-        public byte SpecialAttack { get; set; }
-
-        public byte Defense { get; set; }
-
-        public byte SpecialDefense { get; set; }
-
-        public byte Speed { get; set; }
-
-        public byte Level { get; set; }
-
-        public ulong Experience { get; set; }
-
-        public byte[] IVs
-        {
-            get { return iVs; }
-            set {
-                for (byte i = 0; 0 < 5; ++i)
-                    if (value[i] > 31)
-                    {
-                        Console.WriteLine("Not valid IVs {0} in position {1}", StatNames[i], i);
-                        return;
-                    }
-                    else eVs[i] = value[i];
-            }
-        }
+        
 
         public byte[] EVs
         {
-            get { return eVs; }
+            get { return givedEVs; }
             set
             {
                 for (byte i = 0; 0 < 5; ++i)
@@ -297,19 +229,34 @@ namespace PokemonShowdown.Pokemon
                         Console.WriteLine("Not valid EVs {0} in position {1}", StatNames[i], i);
                         return;
                     }
-                    else eVs[i] = value[i];
+                    else givedEVs[i] = value[i];
 
             }
         }
 
-        public bool Shiny { get; set; }
+        public byte[] Types { 
+            get
+            {
+                return types;
+            }
+            set
+            {
+                if (value[0] < 0 || value[0] > 17)
+                    Debug.WriteLine("Type 1 Invalid.");
+
+                if (value[1] < 0 || value[1] > 17)
+                    Debug.WriteLine("Type 2 Invalid.");
+            }
+        }
 
         public byte GetLevelType()
         { return levelType; }
 
         public void SetLevelType(byte value)
         { if (value < 6) levelType = value; else Console.WriteLine("Not valid Level type value"); }
-
+        
+        
+        #endregion
 
     }
 }
