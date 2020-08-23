@@ -67,9 +67,11 @@ namespace PokemonShowdown.Pokemon
         public static void SaveInXML(List<OPokemon> pokedex)
         {
             XDocument doc = PreparedXMLDocument();
+            XElement root = new XElement("pokedex");
 
             foreach (OPokemon p in pokedex)
             {
+                
                 XElement pokemon = new XElement("pokemon");
                 pokemon.Add(new XAttribute("id", p.Id));
                 pokemon.Add(new XElement("name", p.Name));
@@ -82,8 +84,10 @@ namespace PokemonShowdown.Pokemon
                 pokemon.Add(new XElement("specialDefense", p.SpecialDefense));
                 pokemon.Add(new XElement("speed", p.Speed));
 
-                doc.Root.Add(pokemon);
+                root.Add(pokemon);
             }
+
+            doc.Add(root);
 
             doc.Save(path);
 
