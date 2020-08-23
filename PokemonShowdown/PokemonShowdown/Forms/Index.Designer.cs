@@ -45,7 +45,7 @@
             this.btnShowPokeFromPokedex = new System.Windows.Forms.Button();
             this.btnPokedexTools = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelChildForm = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
             this.panelTeamsSubmenu.SuspendLayout();
             this.panelPokedexToolsSubmenu.SuspendLayout();
@@ -225,6 +225,7 @@
             this.btnAddPokeToPokedex.Text = "Add Pokémon";
             this.btnAddPokeToPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddPokeToPokedex.UseVisualStyleBackColor = true;
+            this.btnAddPokeToPokedex.Click += new System.EventHandler(this.btnAddPokeToPokedex_Click);
             // 
             // btnShowPokeFromPokedex
             // 
@@ -239,6 +240,7 @@
             this.btnShowPokeFromPokedex.Text = "Show Pokémon";
             this.btnShowPokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShowPokeFromPokedex.UseVisualStyleBackColor = true;
+            this.btnShowPokeFromPokedex.Click += new System.EventHandler(this.btnShowPokeFromPokedex_Click);
             // 
             // btnPokedexTools
             // 
@@ -263,20 +265,20 @@
             this.panelLogo.Size = new System.Drawing.Size(250, 100);
             this.panelLogo.TabIndex = 0;
             // 
-            // panelMain
+            // panelChildForm
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(250, 49);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(550, 603);
-            this.panelMain.TabIndex = 4;
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(250, 49);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(550, 603);
+            this.panelChildForm.TabIndex = 4;
             // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 674);
-            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.statusStrip);
@@ -312,6 +314,6 @@
         private System.Windows.Forms.Button btnRemoveTeam;
         private System.Windows.Forms.Button btnEditTeam;
         private System.Windows.Forms.Button btnCreateTeam;
-        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panelChildForm;
     }
 }

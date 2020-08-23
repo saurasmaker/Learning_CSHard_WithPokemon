@@ -28,3 +28,5 @@ C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonS
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.pdb
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.genruntimeconfig.cache
 C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.Index.resources
+C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.AddPokemonForm.resources
+C:\Users\albar\repositorios\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.ShowPokemonForm.resources

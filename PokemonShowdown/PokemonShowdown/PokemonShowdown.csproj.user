@@ -4,5 +4,11 @@
     <Compile Update="Forms\Index.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\PokedexTools\AddPokemonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\PokedexTools\ShowPokemonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

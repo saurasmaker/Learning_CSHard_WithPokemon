@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokemonShowdown.Forms.PokedexTools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,9 +31,19 @@ namespace PokemonShowdown.Forms
 
         }
 
-        private void OpenChildForm()
+        Form activeForm = null;
+        private void OpenChildForm(Form childForm)
         {
+            if(activeForm != null)
+                activeForm.Close();
 
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
 
         }
 
@@ -56,5 +67,14 @@ namespace PokemonShowdown.Forms
         }
         #endregion
 
+        private void btnShowPokeFromPokedex_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ShowPokemonForm());
+        }
+
+        private void btnAddPokeToPokedex_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddPokemonForm());
+        }
     }
 }
