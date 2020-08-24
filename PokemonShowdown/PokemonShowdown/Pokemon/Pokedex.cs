@@ -10,7 +10,7 @@ namespace PokemonShowdown.Pokemon
 {
     class Pokedex
     {
-        private static string path = Directory.GetCurrentDirectory() + "\\..\\..\\..\\Saves\\pokedex.xml";   
+        private static string path = Directory.GetCurrentDirectory() + "\\..\\..\\..\\saves\\pokedex.xml";   
         private List<OPokemon> pokemonList;
 
 

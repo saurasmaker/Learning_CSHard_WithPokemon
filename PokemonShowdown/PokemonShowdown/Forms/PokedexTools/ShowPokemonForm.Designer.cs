@@ -36,7 +36,8 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
@@ -46,7 +47,6 @@
             // 
             // btnSearchPoke
             // 
-            this.btnSearchPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSearchPoke.Location = new System.Drawing.Point(12, 27);
             this.btnSearchPoke.Name = "btnSearchPoke";
             this.btnSearchPoke.Size = new System.Drawing.Size(75, 23);
@@ -57,7 +57,8 @@
             // 
             // textBoxSearchPoke
             // 
-            this.textBoxSearchPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxSearchPoke.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxSearchPoke.ForeColor = System.Drawing.Color.DarkGray;
             this.textBoxSearchPoke.Location = new System.Drawing.Point(93, 28);
             this.textBoxSearchPoke.Name = "textBoxSearchPoke";
@@ -70,7 +71,9 @@
             // 
             // richTextBoxShowPoke
             // 
-            this.richTextBoxShowPoke.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.richTextBoxShowPoke.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxShowPoke.Location = new System.Drawing.Point(12, 55);
             this.richTextBoxShowPoke.Name = "richTextBoxShowPoke";
             this.richTextBoxShowPoke.ReadOnly = true;

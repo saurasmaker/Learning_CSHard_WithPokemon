@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\albar\\.nuget\\packages\\": {}
+    "C:\\Users\\saura\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+      "projectUniqueName": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
       "projectName": "PokemonShowdown",
-      "projectPath": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
-      "packagesPath": "C:\\Users\\albar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\albar\\repositorios\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
+      "projectPath": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+      "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\albar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\saura\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
