@@ -73,7 +73,7 @@ namespace PokemonShowdown.Pokemon
             "\n\n ---Reproduction---" +
             "\n  -Male: " + Genres[0] +
             "\n  -Female: " + Genres[1] +
-            "\n  -Egg Group: " + EggGroup +
+            "\n  -Egg Group: " + PokeEggGroup.EggGroupNames[EggGroup] +
 
             "\n\n ---EVs it Gives--- " +
             "\n Health: " + GivedEVs[PokeStat.Health] +

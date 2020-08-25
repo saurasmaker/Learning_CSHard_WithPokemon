@@ -215,6 +215,7 @@
             this.btnRemovePokeFromPokedex.Text = "Remove Pokémon";
             this.btnRemovePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRemovePokeFromPokedex.UseVisualStyleBackColor = false;
+            this.btnRemovePokeFromPokedex.Click += new System.EventHandler(this.btnRemovePokeFromPokedex_Click);
             // 
             // btnUpdatePokeFromPokedex
             // 

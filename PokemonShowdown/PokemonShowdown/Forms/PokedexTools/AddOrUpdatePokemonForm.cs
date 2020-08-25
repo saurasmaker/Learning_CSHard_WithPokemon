@@ -26,6 +26,7 @@ namespace PokemonShowdown.Forms.PokedexTools
             InitializeComboBoxes();
             this.pokemon = pokemon;
             FillData(pokemon);
+            labelTitle.Text = "Update Pokémon";
         }
 
         #region Methods
@@ -73,7 +74,7 @@ namespace PokemonShowdown.Forms.PokedexTools
                 {
                     SetDataInPokemon();
 
-                    Pokedex.SavePokemonInPokedexXML(p);
+                    Pokedex.SavePokemonInPokedexXML(pokemon);
 
                     MessageBox.Show("Congratulations. You added a Pokémon succesfuly.", "Pokémon Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     

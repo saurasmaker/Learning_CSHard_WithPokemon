@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
             this.numericUpDownSpecialDefense = new System.Windows.Forms.NumericUpDown();
             this.labelSpeed = new System.Windows.Forms.Label();
@@ -81,12 +81,12 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonAccept = new System.Windows.Forms.Button();
             this.groupBoxGenres = new System.Windows.Forms.GroupBox();
+            this.comboBoxEggGroup = new System.Windows.Forms.ComboBox();
+            this.labelEggGroup = new System.Windows.Forms.Label();
             this.labelFemale = new System.Windows.Forms.Label();
             this.numericUpDownFemale = new System.Windows.Forms.NumericUpDown();
             this.labelMale = new System.Windows.Forms.Label();
             this.numericUpDownMale = new System.Windows.Forms.NumericUpDown();
-            this.labelEggGroup = new System.Windows.Forms.Label();
-            this.comboBoxEggGroup = new System.Windows.Forms.ComboBox();
             this.groupBoxStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeed)).BeginInit();
@@ -112,14 +112,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMale)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Add Pokemon";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Location = new System.Drawing.Point(12, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(83, 15);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Add Pokémon";
             // 
             // groupBoxStats
             // 
@@ -756,6 +756,23 @@
             this.groupBoxGenres.TabStop = false;
             this.groupBoxGenres.Text = "Reproduction";
             // 
+            // comboBoxEggGroup
+            // 
+            this.comboBoxEggGroup.FormattingEnabled = true;
+            this.comboBoxEggGroup.Location = new System.Drawing.Point(82, 70);
+            this.comboBoxEggGroup.Name = "comboBoxEggGroup";
+            this.comboBoxEggGroup.Size = new System.Drawing.Size(164, 23);
+            this.comboBoxEggGroup.TabIndex = 7;
+            // 
+            // labelEggGroup
+            // 
+            this.labelEggGroup.AutoSize = true;
+            this.labelEggGroup.Location = new System.Drawing.Point(6, 75);
+            this.labelEggGroup.Name = "labelEggGroup";
+            this.labelEggGroup.Size = new System.Drawing.Size(69, 15);
+            this.labelEggGroup.TabIndex = 6;
+            this.labelEggGroup.Text = "Egg Group: ";
+            // 
             // labelFemale
             // 
             this.labelFemale.AutoSize = true;
@@ -798,23 +815,6 @@
             0,
             0});
             // 
-            // labelEggGroup
-            // 
-            this.labelEggGroup.AutoSize = true;
-            this.labelEggGroup.Location = new System.Drawing.Point(6, 75);
-            this.labelEggGroup.Name = "labelEggGroup";
-            this.labelEggGroup.Size = new System.Drawing.Size(69, 15);
-            this.labelEggGroup.TabIndex = 6;
-            this.labelEggGroup.Text = "Egg Group: ";
-            // 
-            // comboBoxEggGroup
-            // 
-            this.comboBoxEggGroup.FormattingEnabled = true;
-            this.comboBoxEggGroup.Location = new System.Drawing.Point(82, 70);
-            this.comboBoxEggGroup.Name = "comboBoxEggGroup";
-            this.comboBoxEggGroup.Size = new System.Drawing.Size(164, 23);
-            this.comboBoxEggGroup.TabIndex = 7;
-            // 
             // AddOrUpdatePokemonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -827,7 +827,7 @@
             this.Controls.Add(this.groupBoxAppearance);
             this.Controls.Add(this.groupBoxGivedEVs);
             this.Controls.Add(this.groupBoxStats);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddOrUpdatePokemonForm";
             this.Text = "AddPokemonForm";
@@ -867,7 +867,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.GroupBox groupBoxStats;
         private System.Windows.Forms.Label labelSpeed;
         private System.Windows.Forms.NumericUpDown numericUpDownSpeed;

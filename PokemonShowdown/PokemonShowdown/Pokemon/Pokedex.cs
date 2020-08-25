@@ -133,6 +133,26 @@ namespace PokemonShowdown.Pokemon
             return;
         }
 
+        public static void RemovePokemonFromPokedexXML(string name)
+        {
+            XDocument doc = GetXMLDocument();
+            XElement p = null;
+
+            if (doc != null)
+                foreach (XElement e in doc.Root.Elements())
+                    if (e.Element("name").Value.ToUpper().Equals(name.ToUpper()))
+                    {
+                        p = e;
+                        break;
+                    }
+
+            p.Remove();
+
+            doc.Save(path);
+
+            return;
+        }
+
 
         #region Private Methods
         private static XDocument GetXMLDocument()

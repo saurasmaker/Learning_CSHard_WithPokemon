@@ -79,7 +79,12 @@ namespace PokemonShowdown.Forms
 
         private void btnUpdatePokeFromPokedex_Click(object sender, EventArgs e)
         {
-            new SearchPokemonByName(this).Show();
+            new SearchPokemonByName(this, SearchPokemonByName.Update).Show();
+        }
+
+        private void btnRemovePokeFromPokedex_Click(object sender, EventArgs e)
+        {
+            new SearchPokemonByName(this, SearchPokemonByName.Remove).Show();
         }
     }
 }

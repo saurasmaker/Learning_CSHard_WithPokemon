@@ -39,9 +39,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(59, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 15);
+            this.label1.Size = new System.Drawing.Size(192, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Enter the name of the Pokémon to search:";
+            this.label1.Text = "Enter the name of the Pokémon to ";
             // 
             // textBoxSearchPoke
             // 

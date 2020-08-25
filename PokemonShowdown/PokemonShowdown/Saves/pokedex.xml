@@ -29,43 +29,9 @@
       <male>50</male>
       <female>50</female>
     </genres>
-	<eggGroup>0</eggGroup>
+    <eggGroup>0</eggGroup>
     <levelType>0</levelType>
     <healthEV>0</healthEV>
-    <attackEV>0</attackEV>
-    <specialAttackEV>0</specialAttackEV>
-    <defenseEV>0</defenseEV>
-    <specialDefenseEV>0</specialDefenseEV>
-    <speedEV>0</speedEV>
-  </pokemon>
-  <pokemon id="1">
-    <name>asdfqwer</name>
-    <category>asdfqwer</category>
-    <description>asdfqwerqwerqwerqwer</description>
-    <height>3</height>
-    <weight>6</weight>
-    <types>
-      <type>8</type>
-      <type>6</type>
-    </types>
-    <health>7</health>
-    <attack>3</attack>
-    <specialAttack>9</specialAttack>
-    <defense>4</defense>
-    <specialDefense>2</specialDefense>
-    <speed>1</speed>
-    <abilities>
-      <ability>1</ability>
-      <ability>3</ability>
-      <hidden>2</hidden>
-    </abilities>
-    <genres>
-      <male>50</male>
-      <female>50</female>
-    </genres>
-	<eggGroup>0</eggGroup>
-    <levelType>3</levelType>
-    <healthEV>1</healthEV>
     <attackEV>0</attackEV>
     <specialAttackEV>0</specialAttackEV>
     <defenseEV>0</defenseEV>
