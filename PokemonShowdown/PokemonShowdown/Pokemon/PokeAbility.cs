@@ -8,7 +8,7 @@ namespace PokemonShowdown.Pokemon
     {
         //5 generations of skills remain to be added
         public static string[] AbilitiesNames = new string[] {
-            
+            "none", "Water Absorb", "Volt Absorb", "Flash Fire"
         }; 
 
         public static byte WaterAbsorb = 0;

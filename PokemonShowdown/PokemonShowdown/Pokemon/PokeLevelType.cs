@@ -6,6 +6,10 @@ namespace PokemonShowdown.Pokemon
 {
     class PokeLevelType
     {
+        public static string[] LevelTypesNames = new string[] {
+            "Fast", "Medium", "Slow", "Parabolic", "Erratic", "Fluctuating"
+        };
+
         public static byte Fast = 0;
         public static byte Medium = 1;
         public static byte Slow = 2;

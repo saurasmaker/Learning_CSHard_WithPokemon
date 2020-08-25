@@ -30,16 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxStats = new System.Windows.Forms.GroupBox();
+            this.numericUpDownSpecialDefense = new System.Windows.Forms.NumericUpDown();
             this.labelSpeed = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSpeed = new System.Windows.Forms.NumericUpDown();
             this.labelSpecialDefense = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.SpecialAttack = new System.Windows.Forms.Label();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSpecialAttack = new System.Windows.Forms.NumericUpDown();
             this.labelDefense = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDefense = new System.Windows.Forms.NumericUpDown();
             this.labelAttack = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAttack = new System.Windows.Forms.NumericUpDown();
             this.labelHP = new System.Windows.Forms.Label();
             this.numericUpDownHP = new System.Windows.Forms.NumericUpDown();
             this.labelSpeedEVs = new System.Windows.Forms.Label();
@@ -58,39 +58,39 @@
             this.groupBoxAppearance = new System.Windows.Forms.GroupBox();
             this.labelImage = new System.Windows.Forms.Label();
             this.pictureBoxPoke = new System.Windows.Forms.PictureBox();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownWeight = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxCategory = new System.Windows.Forms.TextBox();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBoxAbilityHidden = new System.Windows.Forms.ComboBox();
+            this.comboBoxAbility2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxAbility1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxLevelType = new System.Windows.Forms.ComboBox();
             this.labelLevelType = new System.Windows.Forms.Label();
             this.comboBoxType2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxType1 = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonAccept = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.groupBoxGenres = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.numericUpDownFemale = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.numericUpDownMale = new System.Windows.Forms.NumericUpDown();
             this.groupBoxStats.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAttack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeedEVs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefenseEVs)).BeginInit();
@@ -101,12 +101,13 @@
             this.groupBoxGivedEVs.SuspendLayout();
             this.groupBoxAppearance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoke)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBoxGenres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFemale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMale)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,24 +121,49 @@
             // 
             // groupBoxStats
             // 
+            this.groupBoxStats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxStats.Controls.Add(this.numericUpDownSpecialDefense);
             this.groupBoxStats.Controls.Add(this.labelSpeed);
-            this.groupBoxStats.Controls.Add(this.numericUpDown5);
+            this.groupBoxStats.Controls.Add(this.numericUpDownSpeed);
             this.groupBoxStats.Controls.Add(this.labelSpecialDefense);
-            this.groupBoxStats.Controls.Add(this.numericUpDown4);
             this.groupBoxStats.Controls.Add(this.SpecialAttack);
-            this.groupBoxStats.Controls.Add(this.numericUpDown3);
+            this.groupBoxStats.Controls.Add(this.numericUpDownSpecialAttack);
             this.groupBoxStats.Controls.Add(this.labelDefense);
-            this.groupBoxStats.Controls.Add(this.numericUpDown2);
+            this.groupBoxStats.Controls.Add(this.numericUpDownDefense);
             this.groupBoxStats.Controls.Add(this.labelAttack);
-            this.groupBoxStats.Controls.Add(this.numericUpDown1);
+            this.groupBoxStats.Controls.Add(this.numericUpDownAttack);
             this.groupBoxStats.Controls.Add(this.labelHP);
             this.groupBoxStats.Controls.Add(this.numericUpDownHP);
-            this.groupBoxStats.Location = new System.Drawing.Point(604, 27);
+            this.groupBoxStats.Location = new System.Drawing.Point(346, 28);
             this.groupBoxStats.Name = "groupBoxStats";
             this.groupBoxStats.Size = new System.Drawing.Size(189, 193);
             this.groupBoxStats.TabIndex = 3;
             this.groupBoxStats.TabStop = false;
             this.groupBoxStats.Text = "Stats";
+            // 
+            // numericUpDownSpecialDefense
+            // 
+            this.numericUpDownSpecialDefense.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.numericUpDownSpecialDefense.Location = new System.Drawing.Point(105, 133);
+            this.numericUpDownSpecialDefense.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownSpecialDefense.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownSpecialDefense.Name = "numericUpDownSpecialDefense";
+            this.numericUpDownSpecialDefense.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownSpecialDefense.TabIndex = 1;
+            this.numericUpDownSpecialDefense.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelSpeed
             // 
@@ -148,14 +174,29 @@
             this.labelSpeed.TabIndex = 2;
             this.labelSpeed.Text = "Speed:";
             // 
-            // numericUpDown5
+            // numericUpDownSpeed
             // 
-            this.numericUpDown5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown5.Location = new System.Drawing.Point(105, 162);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDown5.TabIndex = 1;
+            this.numericUpDownSpeed.Location = new System.Drawing.Point(105, 162);
+            this.numericUpDownSpeed.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownSpeed.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownSpeed.Name = "numericUpDownSpeed";
+            this.numericUpDownSpeed.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownSpeed.TabIndex = 1;
+            this.numericUpDownSpeed.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelSpecialDefense
             // 
@@ -166,15 +207,6 @@
             this.labelSpecialDefense.TabIndex = 2;
             this.labelSpecialDefense.Text = "Special Defense:";
             // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown4.Location = new System.Drawing.Point(105, 133);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDown4.TabIndex = 1;
-            // 
             // SpecialAttack
             // 
             this.SpecialAttack.AutoSize = true;
@@ -184,14 +216,29 @@
             this.SpecialAttack.TabIndex = 2;
             this.SpecialAttack.Text = "Special Attack:";
             // 
-            // numericUpDown3
+            // numericUpDownSpecialAttack
             // 
-            this.numericUpDown3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownSpecialAttack.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown3.Location = new System.Drawing.Point(105, 104);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDown3.TabIndex = 1;
+            this.numericUpDownSpecialAttack.Location = new System.Drawing.Point(105, 104);
+            this.numericUpDownSpecialAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownSpecialAttack.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownSpecialAttack.Name = "numericUpDownSpecialAttack";
+            this.numericUpDownSpecialAttack.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownSpecialAttack.TabIndex = 1;
+            this.numericUpDownSpecialAttack.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelDefense
             // 
@@ -202,14 +249,29 @@
             this.labelDefense.TabIndex = 2;
             this.labelDefense.Text = "Defense:";
             // 
-            // numericUpDown2
+            // numericUpDownDefense
             // 
-            this.numericUpDown2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownDefense.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown2.Location = new System.Drawing.Point(105, 75);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDown2.TabIndex = 1;
+            this.numericUpDownDefense.Location = new System.Drawing.Point(105, 75);
+            this.numericUpDownDefense.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownDefense.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownDefense.Name = "numericUpDownDefense";
+            this.numericUpDownDefense.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownDefense.TabIndex = 1;
+            this.numericUpDownDefense.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelAttack
             // 
@@ -220,14 +282,29 @@
             this.labelAttack.TabIndex = 2;
             this.labelAttack.Text = "Attack:";
             // 
-            // numericUpDown1
+            // numericUpDownAttack
             // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownAttack.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Location = new System.Drawing.Point(105, 46);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDown1.TabIndex = 1;
+            this.numericUpDownAttack.Location = new System.Drawing.Point(105, 46);
+            this.numericUpDownAttack.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownAttack.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownAttack.Name = "numericUpDownAttack";
+            this.numericUpDownAttack.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownAttack.TabIndex = 1;
+            this.numericUpDownAttack.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelHP
             // 
@@ -243,9 +320,24 @@
             this.numericUpDownHP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDownHP.Location = new System.Drawing.Point(105, 17);
+            this.numericUpDownHP.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDownHP.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownHP.Name = "numericUpDownHP";
             this.numericUpDownHP.Size = new System.Drawing.Size(78, 23);
             this.numericUpDownHP.TabIndex = 1;
+            this.numericUpDownHP.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // labelSpeedEVs
             // 
@@ -357,6 +449,8 @@
             // 
             // groupBoxGivedEVs
             // 
+            this.groupBoxGivedEVs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxGivedEVs.Controls.Add(this.labelSpeedEVs);
             this.groupBoxGivedEVs.Controls.Add(this.numericUpDownSpeedEVs);
             this.groupBoxGivedEVs.Controls.Add(this.labelSpecialDefenseEVs);
@@ -369,7 +463,7 @@
             this.groupBoxGivedEVs.Controls.Add(this.numericUpDownAttackEVs);
             this.groupBoxGivedEVs.Controls.Add(this.labelHealthEVs);
             this.groupBoxGivedEVs.Controls.Add(this.numericUpDownHealthEVs);
-            this.groupBoxGivedEVs.Location = new System.Drawing.Point(604, 226);
+            this.groupBoxGivedEVs.Location = new System.Drawing.Point(346, 228);
             this.groupBoxGivedEVs.Name = "groupBoxGivedEVs";
             this.groupBoxGivedEVs.Size = new System.Drawing.Size(189, 207);
             this.groupBoxGivedEVs.TabIndex = 3;
@@ -378,12 +472,13 @@
             // 
             // groupBoxAppearance
             // 
-            this.groupBoxAppearance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBoxAppearance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxAppearance.Controls.Add(this.labelImage);
             this.groupBoxAppearance.Controls.Add(this.pictureBoxPoke);
-            this.groupBoxAppearance.Controls.Add(this.numericUpDown7);
-            this.groupBoxAppearance.Controls.Add(this.numericUpDown6);
+            this.groupBoxAppearance.Controls.Add(this.numericUpDownWeight);
+            this.groupBoxAppearance.Controls.Add(this.numericUpDownHeight);
             this.groupBoxAppearance.Controls.Add(this.label3);
             this.groupBoxAppearance.Controls.Add(this.label2);
             this.groupBoxAppearance.Controls.Add(this.textBoxCategory);
@@ -420,27 +515,27 @@
             this.pictureBoxPoke.MouseEnter += new System.EventHandler(this.pictureBoxPoke_MouseEnter);
             this.pictureBoxPoke.MouseLeave += new System.EventHandler(this.pictureBoxPoke_MouseLeave);
             // 
-            // numericUpDown7
+            // numericUpDownWeight
             // 
-            this.numericUpDown7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown7.Location = new System.Drawing.Point(226, 199);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(90, 23);
-            this.numericUpDown7.TabIndex = 3;
+            this.numericUpDownWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.numericUpDownWeight.Location = new System.Drawing.Point(231, 197);
+            this.numericUpDownWeight.Name = "numericUpDownWeight";
+            this.numericUpDownWeight.Size = new System.Drawing.Size(90, 23);
+            this.numericUpDownWeight.TabIndex = 3;
             // 
-            // numericUpDown6
+            // numericUpDownHeight
             // 
-            this.numericUpDown6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown6.Location = new System.Drawing.Point(62, 197);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(90, 23);
-            this.numericUpDown6.TabIndex = 3;
+            this.numericUpDownHeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.numericUpDownHeight.Location = new System.Drawing.Point(62, 197);
+            this.numericUpDownHeight.Name = "numericUpDownHeight";
+            this.numericUpDownHeight.Size = new System.Drawing.Size(90, 23);
+            this.numericUpDownHeight.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 201);
+            this.label3.Location = new System.Drawing.Point(174, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 2;
@@ -466,6 +561,8 @@
             this.textBoxCategory.Size = new System.Drawing.Size(315, 23);
             this.textBoxCategory.TabIndex = 0;
             this.textBoxCategory.Text = "Category...";
+            this.textBoxCategory.Enter += new System.EventHandler(this.textBoxCategory_Enter);
+            this.textBoxCategory.Leave += new System.EventHandler(this.textBoxCategory_Leave);
             // 
             // richTextBoxDescription
             // 
@@ -479,6 +576,8 @@
             this.richTextBoxDescription.Size = new System.Drawing.Size(315, 110);
             this.richTextBoxDescription.TabIndex = 1;
             this.richTextBoxDescription.Text = "Description...";
+            this.richTextBoxDescription.Enter += new System.EventHandler(this.richTextBoxDescription_Enter);
+            this.richTextBoxDescription.Leave += new System.EventHandler(this.richTextBoxDescription_Leave);
             // 
             // textBoxName
             // 
@@ -490,85 +589,98 @@
             this.textBoxName.Size = new System.Drawing.Size(315, 23);
             this.textBoxName.TabIndex = 0;
             this.textBoxName.Text = "Name...";
+            this.textBoxName.Enter += new System.EventHandler(this.textBoxName_Enter);
+            this.textBoxName.Leave += new System.EventHandler(this.textBoxName_Leave);
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.numericUpDown9);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.numericUpDown8);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxLevelType);
             this.groupBox1.Controls.Add(this.labelLevelType);
             this.groupBox1.Controls.Add(this.comboBoxType2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.comboBoxType1);
-            this.groupBox1.Location = new System.Drawing.Point(346, 27);
+            this.groupBox1.Location = new System.Drawing.Point(541, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(252, 406);
+            this.groupBox1.Size = new System.Drawing.Size(252, 253);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Ca";
+            this.groupBox1.Text = "Combat";
             // 
-            // label7
+            // groupBox2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(131, 353);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 15);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Female:";
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.comboBoxAbilityHidden);
+            this.groupBox2.Controls.Add(this.comboBoxAbility2);
+            this.groupBox2.Controls.Add(this.comboBoxAbility1);
+            this.groupBox2.Location = new System.Drawing.Point(6, 133);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(240, 112);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Abilities";
             // 
-            // label6
+            // label10
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 353);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Male:";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 85);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 15);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Hidden:";
             // 
-            // numericUpDown9
+            // label9
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(131, 371);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(115, 23);
-            this.numericUpDown9.TabIndex = 3;
-            this.numericUpDown9.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 54);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 15);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Ability 2:";
             // 
-            // label5
+            // label8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 324);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Gender probability percentage";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 23);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 15);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Ability 1:";
             // 
-            // numericUpDown8
+            // comboBoxAbilityHidden
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(8, 371);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(115, 23);
-            this.numericUpDown8.TabIndex = 3;
-            this.numericUpDown8.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
+            this.comboBoxAbilityHidden.FormattingEnabled = true;
+            this.comboBoxAbilityHidden.Location = new System.Drawing.Point(62, 80);
+            this.comboBoxAbilityHidden.Name = "comboBoxAbilityHidden";
+            this.comboBoxAbilityHidden.Size = new System.Drawing.Size(178, 23);
+            this.comboBoxAbilityHidden.TabIndex = 0;
             // 
-            // comboBox1
+            // comboBoxAbility2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 95);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 23);
-            this.comboBox1.TabIndex = 0;
+            this.comboBoxAbility2.FormattingEnabled = true;
+            this.comboBoxAbility2.Location = new System.Drawing.Point(62, 51);
+            this.comboBoxAbility2.Name = "comboBoxAbility2";
+            this.comboBoxAbility2.Size = new System.Drawing.Size(178, 23);
+            this.comboBoxAbility2.TabIndex = 0;
+            // 
+            // comboBoxAbility1
+            // 
+            this.comboBoxAbility1.FormattingEnabled = true;
+            this.comboBoxAbility1.Location = new System.Drawing.Point(62, 22);
+            this.comboBoxAbility1.Name = "comboBoxAbility1";
+            this.comboBoxAbility1.Size = new System.Drawing.Size(178, 23);
+            this.comboBoxAbility1.TabIndex = 0;
+            // 
+            // comboBoxLevelType
+            // 
+            this.comboBoxLevelType.FormattingEnabled = true;
+            this.comboBoxLevelType.Location = new System.Drawing.Point(6, 95);
+            this.comboBoxLevelType.Name = "comboBoxLevelType";
+            this.comboBoxLevelType.Size = new System.Drawing.Size(240, 23);
+            this.comboBoxLevelType.TabIndex = 0;
             // 
             // labelLevelType
             // 
@@ -606,93 +718,88 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(13, 439);
+            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCancel.Location = new System.Drawing.Point(547, 404);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 6;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonAccept
             // 
-            this.buttonAccept.Location = new System.Drawing.Point(717, 439);
+            this.buttonAccept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAccept.Location = new System.Drawing.Point(710, 404);
             this.buttonAccept.Name = "buttonAccept";
             this.buttonAccept.Size = new System.Drawing.Size(75, 23);
             this.buttonAccept.TabIndex = 7;
             this.buttonAccept.Text = "Accept";
             this.buttonAccept.UseVisualStyleBackColor = true;
+            this.buttonAccept.Click += new System.EventHandler(this.buttonAccept_Click);
             // 
-            // groupBox2
+            // groupBoxGenres
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Location = new System.Drawing.Point(6, 133);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(240, 112);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBoxGenres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxGenres.Controls.Add(this.label6);
+            this.groupBoxGenres.Controls.Add(this.numericUpDownFemale);
+            this.groupBoxGenres.Controls.Add(this.label5);
+            this.groupBoxGenres.Controls.Add(this.numericUpDownMale);
+            this.groupBoxGenres.Location = new System.Drawing.Point(541, 288);
+            this.groupBoxGenres.Name = "groupBoxGenres";
+            this.groupBoxGenres.Size = new System.Drawing.Size(252, 77);
+            this.groupBoxGenres.TabIndex = 8;
+            this.groupBoxGenres.TabStop = false;
+            this.groupBoxGenres.Text = "Genre Probability";
             // 
-            // comboBox2
+            // label6
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(62, 22);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(178, 23);
-            this.comboBox2.TabIndex = 0;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(129, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 15);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Female:";
             // 
-            // comboBox3
+            // numericUpDownFemale
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(62, 51);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(178, 23);
-            this.comboBox3.TabIndex = 0;
+            this.numericUpDownFemale.Location = new System.Drawing.Point(129, 41);
+            this.numericUpDownFemale.Name = "numericUpDownFemale";
+            this.numericUpDownFemale.Size = new System.Drawing.Size(115, 23);
+            this.numericUpDownFemale.TabIndex = 3;
+            this.numericUpDownFemale.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
-            // comboBox4
+            // label5
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(62, 80);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(178, 23);
-            this.comboBox4.TabIndex = 0;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 15);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Male:";
             // 
-            // label8
+            // numericUpDownMale
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 15);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Ability 1:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 54);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 15);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Ability 2:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 85);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 15);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Hidden:";
+            this.numericUpDownMale.Location = new System.Drawing.Point(6, 41);
+            this.numericUpDownMale.Name = "numericUpDownMale";
+            this.numericUpDownMale.Size = new System.Drawing.Size(115, 23);
+            this.numericUpDownMale.TabIndex = 3;
+            this.numericUpDownMale.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
             // AddPokemonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 474);
+            this.ClientSize = new System.Drawing.Size(805, 444);
+            this.Controls.Add(this.groupBoxGenres);
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.groupBox1);
@@ -705,11 +812,11 @@
             this.Text = "AddPokemonForm";
             this.groupBoxStats.ResumeLayout(false);
             this.groupBoxStats.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAttack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeedEVs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefenseEVs)).EndInit();
@@ -722,14 +829,16 @@
             this.groupBoxAppearance.ResumeLayout(false);
             this.groupBoxAppearance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoke)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownWeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHeight)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBoxGenres.ResumeLayout(false);
+            this.groupBoxGenres.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFemale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMale)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -740,15 +849,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxStats;
         private System.Windows.Forms.Label labelSpeed;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numericUpDownSpeed;
         private System.Windows.Forms.Label labelSpecialDefense;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Label SpecialAttack;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDownSpecialAttack;
         private System.Windows.Forms.Label labelDefense;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownDefense;
         private System.Windows.Forms.Label labelAttack;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDownAttack;
         private System.Windows.Forms.Label labelHP;
         private System.Windows.Forms.NumericUpDown numericUpDownHP;
         private System.Windows.Forms.Label labelSpeedEVs;
@@ -768,8 +877,8 @@
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.RichTextBox richTextBoxDescription;
         private System.Windows.Forms.TextBox textBoxCategory;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown numericUpDownWeight;
+        private System.Windows.Forms.NumericUpDown numericUpDownHeight;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxPoke;
@@ -780,19 +889,20 @@
         private System.Windows.Forms.ComboBox comboBoxType1;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonAccept;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxLevelType;
         private System.Windows.Forms.Label labelLevelType;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxAbilityHidden;
+        private System.Windows.Forms.ComboBox comboBoxAbility2;
+        private System.Windows.Forms.ComboBox comboBoxAbility1;
+        private System.Windows.Forms.GroupBox groupBoxGenres;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown numericUpDownFemale;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.NumericUpDown numericUpDownMale;
+        private System.Windows.Forms.NumericUpDown numericUpDownSpecialDefense;
     }
 }

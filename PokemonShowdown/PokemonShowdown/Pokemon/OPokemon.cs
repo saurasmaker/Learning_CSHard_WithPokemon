@@ -15,7 +15,8 @@ namespace PokemonShowdown.Pokemon
         public string Category { get; set; }
         public ushort Height { get; set; }
         public ushort Weight { get; set; }
-        
+        public string PictureName { get; set; }
+
         public byte Health { get; set; }
         public byte Attack { get; set; }
         public byte SpecialAttack { get; set; }
@@ -47,15 +48,41 @@ namespace PokemonShowdown.Pokemon
         #region Methods
         public string Show()
         {
-            return (" Nombre: " + Name +
-            "\n Tipo: " + Category +
-            "\n Descripción: " + Description +
-            "\n PS: " + Health +
-            "\n Ataque: " + Attack +
-            "\n Ataque Esp: " + SpecialAttack +
+            return (
+            "\n ||----- " + Name + " -----||" +
+            "\n Category: " + Category +
+            "\n Description: " + Description +
+            "\n Height: " + Height +
+            "\n Weight: " + Weight +
+            "\n Types: " + PokeType.TypesNames[Types[0]] + " / " + PokeType.TypesNames[Types[1]] +
+
+            "\n\n ---Abilities--- " +
+            "\n  -Ability 1: " + PokeAbility.AbilitiesNames[Abilities[0]] + 
+            "\n  -Ability 2: " + PokeAbility.AbilitiesNames[Abilities[1]] + 
+            "\n  -Hidden: " + PokeAbility.AbilitiesNames[Abilities[1]] + 
+
+            "\n\n ---Base Stats--- " +
+            "\n Health: " + Health +
+            "\n Attack: " + Attack +
+            "\n Special Attack: " + SpecialAttack +
             "\n Defense: " + Defense +
-            "\n Defense Esp: " + SpecialDefense +
-            "\n Velocidad: " + Speed);
+            "\n Special Defense: " + SpecialDefense +
+            "\n Speed: " + Speed + 
+
+            "\n\n ---Genres Probability---" +
+            "\n  -Male: " + Genres[0] +
+            "\n  -Female: " + Genres[1] +
+
+            "\n\n ---EVs it Gives--- " +
+            "\n Health: " + GivedEVs[PokeStat.Health] +
+            "\n Attack: " + GivedEVs[PokeStat.Attack] +
+            "\n Special Attack: " + GivedEVs[PokeStat.SpecialAttack] +
+            "\n Defense: " + GivedEVs[PokeStat.Defense] +
+            "\n Special Defense: " + GivedEVs[PokeStat.SpecialDefense] +
+            "\n Speed: " + GivedEVs[PokeStat.Speed] + 
+
+            "\n\n Level Type: " + PokeLevelType.LevelTypesNames[LevelType] + "\n"         
+            );
         }
 
 

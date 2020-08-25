@@ -145,16 +145,17 @@ namespace PokemonShowdown.Pokemon
         private static XElement AddDataPokemonElement(OPokemon p)
         {
             XElement pokemon = new XElement("pokemon");
-            pokemon.Add(new XAttribute("id", p.Id));
+            pokemon.Add(new XAttribute("id", GenerateId()));
             pokemon.Add(new XElement("name", p.Name));
             pokemon.Add(new XElement("category", p.Category));
             pokemon.Add(new XElement("description", p.Description));
-            pokemon.Add(new XElement("height"), p.Height);
-            pokemon.Add(new XElement("weight"), p.Weight);
+            pokemon.Add(new XElement("height", p.Height));
+            pokemon.Add(new XElement("weight", p.Weight));
+
 
             XElement types = new XElement("types");
-            types.Add(new XElement("type"), p.Types[0]);
-            types.Add(new XElement("type"), p.Types[1]);
+            types.Add(new XElement("type", p.Types[0]));
+            types.Add(new XElement("type", p.Types[1]));
             pokemon.Add(types);
 
             pokemon.Add(new XElement("health", p.Health));
@@ -165,14 +166,14 @@ namespace PokemonShowdown.Pokemon
             pokemon.Add(new XElement("speed", p.Speed));
 
             XElement abilities = new XElement("abilities");
-            types.Add(new XElement("ability"), p.Abilities[0]);
-            types.Add(new XElement("ability"), p.Abilities[1]);
-            types.Add(new XElement("hidden"), p.Abilities[2]);
+            abilities.Add(new XElement("ability", p.Abilities[0]));
+            abilities.Add(new XElement("ability", p.Abilities[1]));
+            abilities.Add(new XElement("hidden", p.Abilities[2]));
             pokemon.Add(abilities);
 
             XElement genres = new XElement("genres");
-            types.Add(new XElement("masc"), p.Genres[0]);
-            types.Add(new XElement("fem"), p.Genres[1]);
+            genres.Add(new XElement("male", p.Genres[0]));
+            genres.Add(new XElement("female", p.Genres[1]));
             pokemon.Add(genres);
 
             pokemon.Add(new XElement("levelType", p.LevelType));
@@ -225,7 +226,7 @@ namespace PokemonShowdown.Pokemon
             for (int i = 0; i < genres.Elements().Count(); ++i)
             {
                 string s = genres.Elements().ElementAt(i).Value;
-                p.Genres[0] = Convert.ToByte(s);
+                p.Genres[i] = Convert.ToByte(s);
             }
 
             p.LevelType = Convert.ToByte(e.Element("levelType").Value);
@@ -238,6 +239,14 @@ namespace PokemonShowdown.Pokemon
             p.GivedEVs[5] = Convert.ToByte(e.Element("speedEV").Value); 
 
             return p;
+        }
+
+        private static int GenerateId()
+        {
+            XDocument doc = GetXMLDocument();
+            IEnumerable<XElement> elements = doc.Root.Elements();
+
+            return (Convert.ToInt32(elements.Last().Attribute("id").Value) + 1);
         }
             #endregion
         

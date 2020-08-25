@@ -7,8 +7,8 @@ namespace PokemonShowdown.Pokemon
     class PokeType
     {
         public static string[] TypesNames = new string[] {
-            "normal", "fighting", "flying", "poison", "ground", "rock", "bug", "ghost", "steel", "fire", "water",
-            "grass", "electric", "psychic", "ice", "dragon", "dark", "fairy"
+            "none", "Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water",
+            "Grass", "Electric", "Psychic", "Ice", "Dragon", "Dark", "Fairy"
         };
 
         public static byte Normal = 0;

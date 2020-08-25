@@ -32,6 +32,9 @@
             this.btnSearchPoke = new System.Windows.Forms.Button();
             this.textBoxSearchPoke = new System.Windows.Forms.TextBox();
             this.richTextBoxShowPoke = new System.Windows.Forms.RichTextBox();
+            this.pictureBoxPokemon = new System.Windows.Forms.PictureBox();
+            this.buttonClose = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +65,7 @@
             this.textBoxSearchPoke.ForeColor = System.Drawing.Color.DarkGray;
             this.textBoxSearchPoke.Location = new System.Drawing.Point(93, 28);
             this.textBoxSearchPoke.Name = "textBoxSearchPoke";
-            this.textBoxSearchPoke.Size = new System.Drawing.Size(210, 23);
+            this.textBoxSearchPoke.Size = new System.Drawing.Size(302, 23);
             this.textBoxSearchPoke.TabIndex = 2;
             this.textBoxSearchPoke.Text = "Enter the name of a pokémon...";
             this.textBoxSearchPoke.Enter += new System.EventHandler(this.textBoxSearchPoke_Enter);
@@ -78,15 +81,36 @@
             this.richTextBoxShowPoke.Name = "richTextBoxShowPoke";
             this.richTextBoxShowPoke.ReadOnly = true;
             this.richTextBoxShowPoke.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBoxShowPoke.Size = new System.Drawing.Size(291, 380);
+            this.richTextBoxShowPoke.Size = new System.Drawing.Size(383, 97);
             this.richTextBoxShowPoke.TabIndex = 3;
             this.richTextBoxShowPoke.Text = "";
+            // 
+            // pictureBoxPokemon
+            // 
+            this.pictureBoxPokemon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxPokemon.Location = new System.Drawing.Point(13, 159);
+            this.pictureBoxPokemon.Name = "pictureBoxPokemon";
+            this.pictureBoxPokemon.Size = new System.Drawing.Size(382, 249);
+            this.pictureBoxPokemon.TabIndex = 4;
+            this.pictureBoxPokemon.TabStop = false;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Location = new System.Drawing.Point(12, 412);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.TabIndex = 5;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // ShowPokemonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 447);
+            this.ClientSize = new System.Drawing.Size(407, 447);
+            this.Controls.Add(this.buttonClose);
+            this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.richTextBoxShowPoke);
             this.Controls.Add(this.textBoxSearchPoke);
             this.Controls.Add(this.btnSearchPoke);
@@ -94,6 +118,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowPokemonForm";
             this.Text = "ShowPokemonForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +130,7 @@
         private System.Windows.Forms.Button btnSearchPoke;
         private System.Windows.Forms.TextBox textBoxSearchPoke;
         private System.Windows.Forms.RichTextBox richTextBoxShowPoke;
+        private System.Windows.Forms.PictureBox pictureBoxPokemon;
+        private System.Windows.Forms.Button buttonClose;
     }
 }

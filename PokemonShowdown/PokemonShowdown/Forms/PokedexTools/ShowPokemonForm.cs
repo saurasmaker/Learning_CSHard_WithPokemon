@@ -56,5 +56,10 @@ namespace PokemonShowdown.Forms.PokedexTools
             if(e.KeyChar == (char)13)
              ShowPokemon();
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

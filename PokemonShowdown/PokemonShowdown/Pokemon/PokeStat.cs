@@ -13,9 +13,9 @@ namespace PokemonShowdown.Pokemon
 
         public static byte Health = 0;
         public static byte Attack = 1;
-        public static byte EspAttack = 2;
+        public static byte SpecialAttack = 2;
         public static byte Defense = 3;
-        public static byte EspDefense = 4;
+        public static byte SpecialDefense = 4;
         public static byte Speed = 5;
     }
 }

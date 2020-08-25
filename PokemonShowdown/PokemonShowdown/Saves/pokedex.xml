@@ -1,52 +1,73 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <pokedex>
-
-  <pokemon id = "0">
-    
+  <pokemon id="0">
     <!-- Description care attributes -->
     <name>Zero</name>
     <category>Zero</category>
     <description>Zero</description>
     <height>0</height>
     <weight>0</weight>
-    
     <!-- Combat care attributes -->
-    <types> 
+    <types>
       <type>0</type>
-      <type>-1</type>  <!-- if Type is -1 it means it has no type -->
-    </types> 
-    
+      <type>0</type>
+      <!-- if Type is -1 it means it has no type -->
+    </types>
     <health>0</health>
     <attack>0</attack>
     <specialAttack>0</specialAttack>
     <defense>0</defense>
     <specialDefense>0</specialDefense>
     <speed>0</speed>
-    
     <abilities>
       <ability>0</ability>
       <ability>0</ability>
       <hidden>0</hidden>
     </abilities>
-    
     <!-- Other attributes -->
     <genres>
-      <masc>50</masc>
-      <fem>50</fem>
+      <male>50</male>
+      <female>50</female>
     </genres>
-    
     <levelType>0</levelType>
-    
     <healthEV>0</healthEV>
     <attackEV>0</attackEV>
     <specialAttackEV>0</specialAttackEV>
     <defenseEV>0</defenseEV>
     <specialDefenseEV>0</specialDefenseEV>
     <speedEV>0</speedEV>
-  
   </pokemon>
-  
-	
-	
+  <pokemon id="1">
+    <name>asdf</name>
+    <category>asdf</category>
+    <description>asdf</description>
+    <height>3</height>
+    <weight>6</weight>
+    <types>
+      <type>3</type>
+      <type>6</type>
+    </types>
+    <health>7</health>
+    <attack>3</attack>
+    <specialAttack>9</specialAttack>
+    <defense>4</defense>
+    <specialDefense>2</specialDefense>
+    <speed>1</speed>
+    <abilities>
+      <ability>3</ability>
+      <ability>1</ability>
+      <hidden>2</hidden>
+    </abilities>
+    <genres>
+      <male>50</male>
+      <female>50</female>
+    </genres>
+    <levelType>0</levelType>
+    <healthEV>2</healthEV>
+    <attackEV>0</attackEV>
+    <specialAttackEV>0</specialAttackEV>
+    <defenseEV>0</defenseEV>
+    <specialDefenseEV>0</specialDefenseEV>
+    <speedEV>0</speedEV>
+  </pokemon>
 </pokedex>
