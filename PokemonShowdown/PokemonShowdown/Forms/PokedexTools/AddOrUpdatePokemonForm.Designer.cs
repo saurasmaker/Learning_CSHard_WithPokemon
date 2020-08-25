@@ -1,6 +1,6 @@
 ﻿namespace PokemonShowdown.Forms.PokedexTools
 {
-    partial class AddPokemonForm
+    partial class AddOrUpdatePokemonForm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.labelAttack = new System.Windows.Forms.Label();
             this.numericUpDownAttack = new System.Windows.Forms.NumericUpDown();
             this.labelHP = new System.Windows.Forms.Label();
-            this.numericUpDownHP = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownHealth = new System.Windows.Forms.NumericUpDown();
             this.labelSpeedEVs = new System.Windows.Forms.Label();
             this.numericUpDownSpeedEVs = new System.Windows.Forms.NumericUpDown();
             this.labelSpecialDefenseEVs = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAttack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeedEVs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefenseEVs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttackEVs)).BeginInit();
@@ -133,7 +133,7 @@
             this.groupBoxStats.Controls.Add(this.labelAttack);
             this.groupBoxStats.Controls.Add(this.numericUpDownAttack);
             this.groupBoxStats.Controls.Add(this.labelHP);
-            this.groupBoxStats.Controls.Add(this.numericUpDownHP);
+            this.groupBoxStats.Controls.Add(this.numericUpDownHealth);
             this.groupBoxStats.Location = new System.Drawing.Point(346, 28);
             this.groupBoxStats.Name = "groupBoxStats";
             this.groupBoxStats.Size = new System.Drawing.Size(189, 193);
@@ -315,25 +315,25 @@
             this.labelHP.TabIndex = 2;
             this.labelHP.Text = "Health:";
             // 
-            // numericUpDownHP
+            // numericUpDownHealth
             // 
-            this.numericUpDownHP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.numericUpDownHealth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDownHP.Location = new System.Drawing.Point(105, 17);
-            this.numericUpDownHP.Maximum = new decimal(new int[] {
+            this.numericUpDownHealth.Location = new System.Drawing.Point(105, 17);
+            this.numericUpDownHealth.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDownHP.Minimum = new decimal(new int[] {
+            this.numericUpDownHealth.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDownHP.Name = "numericUpDownHP";
-            this.numericUpDownHP.Size = new System.Drawing.Size(78, 23);
-            this.numericUpDownHP.TabIndex = 1;
-            this.numericUpDownHP.Value = new decimal(new int[] {
+            this.numericUpDownHealth.Name = "numericUpDownHealth";
+            this.numericUpDownHealth.Size = new System.Drawing.Size(78, 23);
+            this.numericUpDownHealth.TabIndex = 1;
+            this.numericUpDownHealth.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -794,7 +794,7 @@
             0,
             0});
             // 
-            // AddPokemonForm
+            // AddOrUpdatePokemonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -808,7 +808,7 @@
             this.Controls.Add(this.groupBoxStats);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AddPokemonForm";
+            this.Name = "AddOrUpdatePokemonForm";
             this.Text = "AddPokemonForm";
             this.groupBoxStats.ResumeLayout(false);
             this.groupBoxStats.PerformLayout();
@@ -817,7 +817,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAttack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHealth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeedEVs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefenseEVs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialAttackEVs)).EndInit();
@@ -859,7 +859,7 @@
         private System.Windows.Forms.Label labelAttack;
         private System.Windows.Forms.NumericUpDown numericUpDownAttack;
         private System.Windows.Forms.Label labelHP;
-        private System.Windows.Forms.NumericUpDown numericUpDownHP;
+        private System.Windows.Forms.NumericUpDown numericUpDownHealth;
         private System.Windows.Forms.Label labelSpeedEVs;
         private System.Windows.Forms.NumericUpDown numericUpDownSpeedEVs;
         private System.Windows.Forms.Label labelSpecialDefenseEVs;
@@ -904,5 +904,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDownMale;
         private System.Windows.Forms.NumericUpDown numericUpDownSpecialDefense;
+        private System.Windows.Forms.NumericUpDown alth;
     }
 }

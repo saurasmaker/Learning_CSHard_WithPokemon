@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace PokemonShowdown.Pokemon
@@ -63,6 +64,7 @@ namespace PokemonShowdown.Pokemon
         public static void SavePokemonInPokedexXML(OPokemon p)
         {
             XDocument doc = GetXMLDocument();
+            
             if (doc == null)
                 doc = PreparedXMLDocument();
 
@@ -113,8 +115,26 @@ namespace PokemonShowdown.Pokemon
             return p;
         }
 
+        public static void EditPokemonFromPokedexXML(string id, OPokemon p)
+        {
+            XDocument doc = GetXMLDocument();
+            XElement f = null;
+            
+            if (doc != null)
+                foreach (XElement e in doc.Root.Elements())
+                    if (e.Attribute("id").Value.ToUpper().Equals(id.ToUpper()))
+                        f = e;
+            
+            if(f!=null && p!=null)
+                EditDataInPokemon(f, p);
 
-            #region Private Methods
+            doc.Save(path);
+
+            return;
+        }
+
+
+        #region Private Methods
         private static XDocument GetXMLDocument()
         {
             XDocument doc = null;
@@ -204,7 +224,7 @@ namespace PokemonShowdown.Pokemon
             {
                 string s = types.Elements().ElementAt(i).Value;
                 if (s != null)
-                    p.Types[i] = Convert.ToSByte(s);
+                    p.Types[i] = Convert.ToByte(s);
             }
 
             p.Health = Convert.ToByte(e.Element("health").Value);
@@ -218,8 +238,9 @@ namespace PokemonShowdown.Pokemon
             for (int i = 0; i < abilities.Elements().Count(); ++i)
             {
                 string s = abilities.Elements().ElementAt(i).Value;
-                if(s != null)
-                    p.Abilities[0] = Convert.ToByte(s);
+
+                if (s != null)
+                    p.Abilities[i] = Convert.ToByte(s);
             }
 
             XElement genres = e.Element("genres");
@@ -231,14 +252,54 @@ namespace PokemonShowdown.Pokemon
 
             p.LevelType = Convert.ToByte(e.Element("levelType").Value);
 
-            p.GivedEVs[0] = Convert.ToByte(e.Element("healthEV").Value);
-            p.GivedEVs[1] = Convert.ToByte(e.Element("attackEV").Value);
-            p.GivedEVs[2] = Convert.ToByte(e.Element("specialAttackEV").Value);
-            p.GivedEVs[3] = Convert.ToByte(e.Element("defenseEV").Value);
-            p.GivedEVs[4] = Convert.ToByte(e.Element("specialDefenseEV").Value);
-            p.GivedEVs[5] = Convert.ToByte(e.Element("speedEV").Value); 
+            p.GivedEVs[PokeStat.Health] = Convert.ToByte(e.Element("healthEV").Value);
+            p.GivedEVs[PokeStat.Attack] = Convert.ToByte(e.Element("attackEV").Value);
+            p.GivedEVs[PokeStat.SpecialAttack] = Convert.ToByte(e.Element("specialAttackEV").Value);
+            p.GivedEVs[PokeStat.Defense] = Convert.ToByte(e.Element("defenseEV").Value);
+            p.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(e.Element("specialDefenseEV").Value);
+            p.GivedEVs[PokeStat.Speed] = Convert.ToByte(e.Element("speedEV").Value); 
 
             return p;
+        }
+
+        private static XElement EditDataInPokemon(XElement pokemon, OPokemon p)
+        {           
+            pokemon.Element("name").Value = p.Name;
+            pokemon.Element("category").Value = p.Category;
+            pokemon.Element("description").Value = p.Description;
+            pokemon.Element("height").Value = p.Height.ToString();
+            pokemon.Element("weight").Value = p.Weight.ToString();
+
+            XElement types = pokemon.Element("types");
+            for (int i = 0; i < types.Elements().Count(); ++i)
+                types.Elements().ElementAt(i).Value = p.Types[i].ToString();
+
+            pokemon.Element("health").Value = p.Health.ToString();
+            pokemon.Element("attack").Value = p.Attack.ToString();
+            pokemon.Element("defense").Value = p.Defense.ToString();
+            pokemon.Element("specialAttack").Value = p.SpecialAttack.ToString();
+            pokemon.Element("specialDefense").Value = p.SpecialDefense.ToString();
+            pokemon.Element("speed").Value = p.Speed.ToString();
+
+            XElement abilities = pokemon.Element("abilities");
+            for (int i = 0; i < abilities.Elements().Count(); ++i)
+                abilities.Elements().ElementAt(i).Value = p.Abilities[i].ToString();      
+            abilities.Element("hidden").Value = p.Abilities[2].ToString();
+
+            XElement genres = pokemon.Element("genres");
+            for (int i = 0; i < genres.Elements().Count(); ++i)
+                genres.Elements().ElementAt(i).Value = p.Genres[i].ToString();
+
+            pokemon.Element("levelType").Value = p.LevelType.ToString();
+
+            pokemon.Element("healthEV").Value = p.GivedEVs[PokeStat.Health].ToString();
+            pokemon.Element("attackEV").Value = p.GivedEVs[PokeStat.Attack].ToString();
+            pokemon.Element("defenseEV").Value = p.GivedEVs[PokeStat.Defense].ToString();
+            pokemon.Element("specialAttackEV").Value = p.GivedEVs[PokeStat.SpecialAttack].ToString();
+            pokemon.Element("specialDefenseEV").Value = p.GivedEVs[PokeStat.SpecialDefense].ToString();
+            pokemon.Element("speedEV").Value = p.GivedEVs[PokeStat.Speed].ToString();
+
+            return pokemon;
         }
 
         private static int GenerateId()

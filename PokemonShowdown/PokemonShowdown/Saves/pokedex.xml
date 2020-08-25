@@ -38,13 +38,13 @@
     <speedEV>0</speedEV>
   </pokemon>
   <pokemon id="1">
-    <name>asdf</name>
-    <category>asdf</category>
-    <description>asdf</description>
+    <name>asdfqwer</name>
+    <category>asdfqwer</category>
+    <description>asdfqwerqwerqwerqwer</description>
     <height>3</height>
     <weight>6</weight>
     <types>
-      <type>3</type>
+      <type>8</type>
       <type>6</type>
     </types>
     <health>7</health>
@@ -54,16 +54,16 @@
     <specialDefense>2</specialDefense>
     <speed>1</speed>
     <abilities>
-      <ability>3</ability>
       <ability>1</ability>
+      <ability>3</ability>
       <hidden>2</hidden>
     </abilities>
     <genres>
       <male>50</male>
       <female>50</female>
     </genres>
-    <levelType>0</levelType>
-    <healthEV>2</healthEV>
+    <levelType>3</levelType>
+    <healthEV>1</healthEV>
     <attackEV>0</attackEV>
     <specialAttackEV>0</specialAttackEV>
     <defenseEV>0</defenseEV>

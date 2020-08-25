@@ -38,7 +38,6 @@ C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShow
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.pdb
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csprojAssemblyReference.cache
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.Index.resources
-C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.AddPokemonForm.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.ShowPokemonForm.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csproj.GenerateResource.cache
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.AssemblyInfoInputs.cache
@@ -47,3 +46,5 @@ C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShow
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.dll
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.pdb
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.genruntimeconfig.cache
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.AddOrUpdatePokemonForm.resources
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.SearchPokemonByName.resources

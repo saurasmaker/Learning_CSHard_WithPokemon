@@ -211,6 +211,7 @@
             this.btnUpdatePokeFromPokedex.Text = "Update Pokémon";
             this.btnUpdatePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdatePokeFromPokedex.UseVisualStyleBackColor = true;
+            this.btnUpdatePokeFromPokedex.Click += new System.EventHandler(this.btnUpdatePokeFromPokedex_Click);
             // 
             // btnAddPokeToPokedex
             // 

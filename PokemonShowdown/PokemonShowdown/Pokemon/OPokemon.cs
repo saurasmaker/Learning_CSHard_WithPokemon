@@ -6,7 +6,7 @@ using System.Text;
 
 namespace PokemonShowdown.Pokemon
 {
-    class OPokemon
+    public class OPokemon
     {
 
         #region Attributes
@@ -25,7 +25,7 @@ namespace PokemonShowdown.Pokemon
         public byte Speed { get; set; }
 
         private string description;
-        private sbyte[] types;
+        private byte[] types;
         private byte[] abilities;
         private byte[] givedEVs;
         private byte[] genres;
@@ -38,7 +38,7 @@ namespace PokemonShowdown.Pokemon
         #region Constructors
         public OPokemon()
         {
-            Types = new sbyte[2] { 0, 0 };
+            Types = new byte[2] { 0, 0 };
             GivedEVs = new byte[6] { 0, 0, 0, 0, 0, 0 };
             Genres = new byte[2] { 0, 0 };
             Abilities = new byte[3] { 0, 0, 0 };
@@ -105,7 +105,7 @@ namespace PokemonShowdown.Pokemon
             set { if(value.Length < 1000) description = value; }
         }
 
-        public sbyte[] Types
+        public byte[] Types
         {
             get
             {

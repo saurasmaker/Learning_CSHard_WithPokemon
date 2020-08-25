@@ -10,14 +10,23 @@ using PokemonShowdown.Pokemon;
 
 namespace PokemonShowdown.Forms.PokedexTools
 {
-    public partial class AddPokemonForm : Form
+    public partial class AddOrUpdatePokemonForm : Form
     {
-        public AddPokemonForm()
+        private OPokemon pokemon;
+
+        public AddOrUpdatePokemonForm()
         {
             InitializeComponent();
             InitializeComboBoxes();
         }
 
+        public AddOrUpdatePokemonForm(OPokemon pokemon)
+        {
+            InitializeComponent();
+            InitializeComboBoxes();
+            this.pokemon = pokemon;
+            FillData(pokemon);
+        }
 
         #region Methods
         private void InitializeComboBoxes()
@@ -50,12 +59,68 @@ namespace PokemonShowdown.Forms.PokedexTools
 
         private void AddPokemon()
         {
-            OPokemon pokemon = new OPokemon();
+            OPokemon p = new OPokemon();
 
             if (CheckData())
             {
-                /*try
-                {*/
+                try
+                {
+                    p.Name = textBoxName.Text;
+                    p.Category = textBoxCategory.Text;
+                    p.Description = richTextBoxDescription.Text;
+                    p.Weight = Convert.ToUInt16(numericUpDownWeight.Value);
+                    p.Height = Convert.ToUInt16(numericUpDownHeight.Value);
+                    //pokemon.PictureName = pictureBoxPoke.Name;
+
+                    p.Genres[0] = Convert.ToByte(numericUpDownMale.Value);
+                    p.Genres[1] = Convert.ToByte(numericUpDownFemale.Value);
+
+                    p.Health = Convert.ToByte(numericUpDownHealth.Value);
+                    p.Attack = Convert.ToByte(numericUpDownAttack.Value);
+                    p.SpecialAttack = Convert.ToByte(numericUpDownSpecialAttack.Value);
+                    p.Defense = Convert.ToByte(numericUpDownDefense.Value);
+                    p.SpecialDefense = Convert.ToByte(numericUpDownSpecialDefense.Value);
+                    p.Speed = Convert.ToByte(numericUpDownSpeed.Value);
+
+                    p.GivedEVs[PokeStat.Health] = Convert.ToByte(numericUpDownHealthEVs.Value);
+                    p.GivedEVs[PokeStat.Attack] = Convert.ToByte(numericUpDownAttackEVs.Value);
+                    p.GivedEVs[PokeStat.Defense] = Convert.ToByte(numericUpDownDefenseEVs.Value);
+                    p.GivedEVs[PokeStat.SpecialAttack] = Convert.ToByte(numericUpDownSpecialAttackEVs.Value);
+                    p.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(numericUpDownSpecialDefenseEVs.Value);
+                    p.GivedEVs[PokeStat.Speed] = Convert.ToByte(numericUpDownSpeedEVs.Value);
+
+                    p.Types[0] = Convert.ToByte(comboBoxType1.SelectedIndex);
+                    p.Types[1] = Convert.ToByte(comboBoxType2.SelectedIndex);
+
+                    p.Abilities[0] = Convert.ToByte(comboBoxAbility1.SelectedIndex);
+                    p.Abilities[1] = Convert.ToByte(comboBoxAbility2.SelectedIndex);
+                    p.Abilities[2] = Convert.ToByte(comboBoxAbilityHidden.SelectedIndex);
+
+                    p.LevelType = Convert.ToByte(comboBoxLevelType.SelectedIndex);
+
+                    Pokedex.SavePokemonInPokedexXML(p);
+
+                    MessageBox.Show("Congratulations. You added a Pokémon succesfuly.", "Pokémon Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
+                    Dispose();
+
+                }catch(Exception e)
+                {
+                    MessageBox.Show("There was a problem adding the Pokémon. Please, check the Log for more information.", "Add Pokémon Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+            }
+
+            return;
+        }
+
+        private void UpdatePokemon()
+        {
+            if (CheckData())
+            {
+                try
+                {
                     pokemon.Name = textBoxName.Text;
                     pokemon.Category = textBoxCategory.Text;
                     pokemon.Description = richTextBoxDescription.Text;
@@ -66,7 +131,7 @@ namespace PokemonShowdown.Forms.PokedexTools
                     pokemon.Genres[0] = Convert.ToByte(numericUpDownMale.Value);
                     pokemon.Genres[1] = Convert.ToByte(numericUpDownFemale.Value);
 
-                    pokemon.Health = Convert.ToByte(numericUpDownHP.Value);
+                    pokemon.Health = Convert.ToByte(numericUpDownHealth.Value);
                     pokemon.Attack = Convert.ToByte(numericUpDownAttack.Value);
                     pokemon.SpecialAttack = Convert.ToByte(numericUpDownSpecialAttack.Value);
                     pokemon.Defense = Convert.ToByte(numericUpDownDefense.Value);
@@ -80,8 +145,8 @@ namespace PokemonShowdown.Forms.PokedexTools
                     pokemon.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(numericUpDownSpecialDefenseEVs.Value);
                     pokemon.GivedEVs[PokeStat.Speed] = Convert.ToByte(numericUpDownSpeedEVs.Value);
 
-                    pokemon.Types[0] = Convert.ToSByte(comboBoxType1.SelectedIndex);
-                    pokemon.Types[1] = Convert.ToSByte(comboBoxType2.SelectedIndex);
+                    pokemon.Types[0] = Convert.ToByte(comboBoxType1.SelectedIndex);
+                    pokemon.Types[1] = Convert.ToByte(comboBoxType2.SelectedIndex);
 
                     pokemon.Abilities[0] = Convert.ToByte(comboBoxAbility1.SelectedIndex);
                     pokemon.Abilities[1] = Convert.ToByte(comboBoxAbility2.SelectedIndex);
@@ -89,22 +154,24 @@ namespace PokemonShowdown.Forms.PokedexTools
 
                     pokemon.LevelType = Convert.ToByte(comboBoxLevelType.SelectedIndex);
 
-                    richTextBoxDescription.Text = pokemon.Show();
+                    Pokedex.EditPokemonFromPokedexXML(pokemon.Id, pokemon);
 
-                    Pokedex.SavePokemonInPokedexXML(pokemon);
+                    MessageBox.Show("Congratulations. You Updated a Pokémon succesfuly.", "Pokémon Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    /*MessageBox.Show("Congratulations. You added a Pokémon succesfuly.", "Pokémon Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Dispose();
 
-                }catch(Exception e)
+                }
+                catch (Exception e)
                 {
-                    MessageBox.Show("There was a problem added the Pokémon. Please, check the Log for more information.", "Add Pokémon Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("There was a problem updating the Pokémon. Please, check the Log for more information.", "Add Pokémon Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }*/
+                }
 
             }
 
             return;
         }
+
 
         private bool CheckData()
         {
@@ -139,6 +206,67 @@ namespace PokemonShowdown.Forms.PokedexTools
 
 
             return true;
+        }
+
+        private void FillData(OPokemon pokemon)
+        {
+            textBoxName.Text = pokemon.Name;
+            textBoxName.ForeColor = Color.Black;
+
+            textBoxCategory.Text = pokemon.Category;
+            textBoxCategory.ForeColor = Color.Black;
+
+            richTextBoxDescription.Text = pokemon.Description;
+            richTextBoxDescription.ForeColor = Color.Black;
+
+            numericUpDownHeight.Value = pokemon.Height;
+            numericUpDownWeight.Value = pokemon.Weight;
+
+            try
+            { numericUpDownHealth.Value = pokemon.Health;}
+            catch (Exception)
+            {numericUpDownHealth.Value = 1;}
+            try
+            { numericUpDownAttack.Value = pokemon.Attack; }
+            catch (Exception)
+            { numericUpDownAttack.Value = 1; }
+            try
+            { numericUpDownDefense.Value = pokemon.Defense; }
+            catch (Exception)
+            { numericUpDownDefense.Value = 1; }
+            try
+            { numericUpDownSpecialAttack.Value = pokemon.SpecialAttack; }
+            catch (Exception)
+            { numericUpDownSpecialAttack.Value = 1; }
+            try
+            { numericUpDownSpecialDefense.Value = pokemon.SpecialDefense; }
+            catch (Exception)
+            { numericUpDownSpecialDefense.Value = 1; }
+            try
+            { numericUpDownSpeed.Value = pokemon.Speed; }
+            catch (Exception)
+            { numericUpDownSpeed.Value = 1; }
+
+            numericUpDownHealthEVs.Value = pokemon.GivedEVs[PokeStat.Health];
+            numericUpDownAttackEVs.Value = pokemon.GivedEVs[PokeStat.Attack];
+            numericUpDownDefenseEVs.Value = pokemon.GivedEVs[PokeStat.Defense];
+            numericUpDownSpecialAttackEVs.Value = pokemon.GivedEVs[PokeStat.SpecialAttack];
+            numericUpDownSpecialDefenseEVs.Value = pokemon.GivedEVs[PokeStat.SpecialDefense];
+            numericUpDownSpeedEVs.Value = pokemon.GivedEVs[PokeStat.Speed];
+
+            comboBoxAbility1.SelectedIndex = pokemon.Abilities[0];
+            comboBoxAbility2.SelectedIndex = pokemon.Abilities[1];
+            comboBoxAbilityHidden.SelectedIndex = pokemon.Abilities[2];
+
+            comboBoxLevelType.SelectedIndex = pokemon.LevelType;
+
+            comboBoxType1.SelectedIndex = pokemon.Types[0];
+            comboBoxType2.SelectedIndex = pokemon.Types[1];
+
+            numericUpDownMale.Value = pokemon.Genres[0];
+            numericUpDownMale.Value = pokemon.Genres[1];
+
+            return;
         }
 
 
@@ -179,19 +307,23 @@ namespace PokemonShowdown.Forms.PokedexTools
         #endregion
 
 
-
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure that you want to close this form? All changes realized will desapear.", "Close advise", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
-                Dispose(); 
-        }
+                Dispose();
 
+            return;
+        }
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-            AddPokemon();
+            if (pokemon != null) UpdatePokemon();
+            else AddPokemon();
+
+            return;
         }
 
+        #region TextBoxes
         private void textBoxName_Enter(object sender, EventArgs e)
         {
             if (textBoxName.Text == "Name...")
@@ -245,5 +377,6 @@ namespace PokemonShowdown.Forms.PokedexTools
                 richTextBoxDescription.ForeColor = Color.DarkGray;
             }
         }
+        #endregion
     }
 }

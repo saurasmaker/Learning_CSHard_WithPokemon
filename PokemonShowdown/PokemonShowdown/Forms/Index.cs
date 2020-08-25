@@ -32,7 +32,7 @@ namespace PokemonShowdown.Forms
         }
 
         Form activeForm = null;
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             if(activeForm != null)
                 activeForm.Close();
@@ -74,7 +74,12 @@ namespace PokemonShowdown.Forms
 
         private void btnAddPokeToPokedex_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new AddPokemonForm());
+            OpenChildForm(new AddOrUpdatePokemonForm());
+        }
+
+        private void btnUpdatePokeFromPokedex_Click(object sender, EventArgs e)
+        {
+            new SearchPokemonByName(this).Show();
         }
     }
 }
