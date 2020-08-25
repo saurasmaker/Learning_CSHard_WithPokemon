@@ -34,13 +34,13 @@
             this.labelSpeed = new System.Windows.Forms.Label();
             this.numericUpDownSpeed = new System.Windows.Forms.NumericUpDown();
             this.labelSpecialDefense = new System.Windows.Forms.Label();
-            this.SpecialAttack = new System.Windows.Forms.Label();
+            this.labelSpecialAttack = new System.Windows.Forms.Label();
             this.numericUpDownSpecialAttack = new System.Windows.Forms.NumericUpDown();
             this.labelDefense = new System.Windows.Forms.Label();
             this.numericUpDownDefense = new System.Windows.Forms.NumericUpDown();
             this.labelAttack = new System.Windows.Forms.Label();
             this.numericUpDownAttack = new System.Windows.Forms.NumericUpDown();
-            this.labelHP = new System.Windows.Forms.Label();
+            this.labelHealth = new System.Windows.Forms.Label();
             this.numericUpDownHealth = new System.Windows.Forms.NumericUpDown();
             this.labelSpeedEVs = new System.Windows.Forms.Label();
             this.numericUpDownSpeedEVs = new System.Windows.Forms.NumericUpDown();
@@ -60,31 +60,33 @@
             this.pictureBoxPoke = new System.Windows.Forms.PictureBox();
             this.numericUpDownWeight = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownHeight = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelWeight = new System.Windows.Forms.Label();
+            this.labelHeight = new System.Windows.Forms.Label();
             this.textBoxCategory = new System.Windows.Forms.TextBox();
             this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelAbilityHidden = new System.Windows.Forms.Label();
+            this.labelAbility2 = new System.Windows.Forms.Label();
+            this.labelAbility1 = new System.Windows.Forms.Label();
             this.comboBoxAbilityHidden = new System.Windows.Forms.ComboBox();
             this.comboBoxAbility2 = new System.Windows.Forms.ComboBox();
             this.comboBoxAbility1 = new System.Windows.Forms.ComboBox();
             this.comboBoxLevelType = new System.Windows.Forms.ComboBox();
             this.labelLevelType = new System.Windows.Forms.Label();
             this.comboBoxType2 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelTypes = new System.Windows.Forms.Label();
             this.comboBoxType1 = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonAccept = new System.Windows.Forms.Button();
             this.groupBoxGenres = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelFemale = new System.Windows.Forms.Label();
             this.numericUpDownFemale = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelMale = new System.Windows.Forms.Label();
             this.numericUpDownMale = new System.Windows.Forms.NumericUpDown();
+            this.labelEggGroup = new System.Windows.Forms.Label();
+            this.comboBoxEggGroup = new System.Windows.Forms.ComboBox();
             this.groupBoxStats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpecialDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpeed)).BeginInit();
@@ -126,13 +128,13 @@
             this.groupBoxStats.Controls.Add(this.labelSpeed);
             this.groupBoxStats.Controls.Add(this.numericUpDownSpeed);
             this.groupBoxStats.Controls.Add(this.labelSpecialDefense);
-            this.groupBoxStats.Controls.Add(this.SpecialAttack);
+            this.groupBoxStats.Controls.Add(this.labelSpecialAttack);
             this.groupBoxStats.Controls.Add(this.numericUpDownSpecialAttack);
             this.groupBoxStats.Controls.Add(this.labelDefense);
             this.groupBoxStats.Controls.Add(this.numericUpDownDefense);
             this.groupBoxStats.Controls.Add(this.labelAttack);
             this.groupBoxStats.Controls.Add(this.numericUpDownAttack);
-            this.groupBoxStats.Controls.Add(this.labelHP);
+            this.groupBoxStats.Controls.Add(this.labelHealth);
             this.groupBoxStats.Controls.Add(this.numericUpDownHealth);
             this.groupBoxStats.Location = new System.Drawing.Point(346, 28);
             this.groupBoxStats.Name = "groupBoxStats";
@@ -207,14 +209,14 @@
             this.labelSpecialDefense.TabIndex = 2;
             this.labelSpecialDefense.Text = "Special Defense:";
             // 
-            // SpecialAttack
+            // labelSpecialAttack
             // 
-            this.SpecialAttack.AutoSize = true;
-            this.SpecialAttack.Location = new System.Drawing.Point(6, 106);
-            this.SpecialAttack.Name = "SpecialAttack";
-            this.SpecialAttack.Size = new System.Drawing.Size(84, 15);
-            this.SpecialAttack.TabIndex = 2;
-            this.SpecialAttack.Text = "Special Attack:";
+            this.labelSpecialAttack.AutoSize = true;
+            this.labelSpecialAttack.Location = new System.Drawing.Point(6, 106);
+            this.labelSpecialAttack.Name = "labelSpecialAttack";
+            this.labelSpecialAttack.Size = new System.Drawing.Size(84, 15);
+            this.labelSpecialAttack.TabIndex = 2;
+            this.labelSpecialAttack.Text = "Special Attack:";
             // 
             // numericUpDownSpecialAttack
             // 
@@ -306,14 +308,14 @@
             0,
             0});
             // 
-            // labelHP
+            // labelHealth
             // 
-            this.labelHP.AutoSize = true;
-            this.labelHP.Location = new System.Drawing.Point(6, 19);
-            this.labelHP.Name = "labelHP";
-            this.labelHP.Size = new System.Drawing.Size(45, 15);
-            this.labelHP.TabIndex = 2;
-            this.labelHP.Text = "Health:";
+            this.labelHealth.AutoSize = true;
+            this.labelHealth.Location = new System.Drawing.Point(6, 19);
+            this.labelHealth.Name = "labelHealth";
+            this.labelHealth.Size = new System.Drawing.Size(45, 15);
+            this.labelHealth.TabIndex = 2;
+            this.labelHealth.Text = "Health:";
             // 
             // numericUpDownHealth
             // 
@@ -479,8 +481,8 @@
             this.groupBoxAppearance.Controls.Add(this.pictureBoxPoke);
             this.groupBoxAppearance.Controls.Add(this.numericUpDownWeight);
             this.groupBoxAppearance.Controls.Add(this.numericUpDownHeight);
-            this.groupBoxAppearance.Controls.Add(this.label3);
-            this.groupBoxAppearance.Controls.Add(this.label2);
+            this.groupBoxAppearance.Controls.Add(this.labelWeight);
+            this.groupBoxAppearance.Controls.Add(this.labelHeight);
             this.groupBoxAppearance.Controls.Add(this.textBoxCategory);
             this.groupBoxAppearance.Controls.Add(this.richTextBoxDescription);
             this.groupBoxAppearance.Controls.Add(this.textBoxName);
@@ -531,25 +533,25 @@
             this.numericUpDownHeight.Size = new System.Drawing.Size(90, 23);
             this.numericUpDownHeight.TabIndex = 3;
             // 
-            // label3
+            // labelWeight
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(174, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Weight: ";
+            this.labelWeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelWeight.AutoSize = true;
+            this.labelWeight.Location = new System.Drawing.Point(174, 199);
+            this.labelWeight.Name = "labelWeight";
+            this.labelWeight.Size = new System.Drawing.Size(51, 15);
+            this.labelWeight.TabIndex = 2;
+            this.labelWeight.Text = "Weight: ";
             // 
-            // label2
+            // labelHeight
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 199);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Height: ";
+            this.labelHeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelHeight.AutoSize = true;
+            this.labelHeight.Location = new System.Drawing.Point(7, 199);
+            this.labelHeight.Name = "labelHeight";
+            this.labelHeight.Size = new System.Drawing.Size(49, 15);
+            this.labelHeight.TabIndex = 2;
+            this.labelHeight.Text = "Height: ";
             // 
             // textBoxCategory
             // 
@@ -599,7 +601,7 @@
             this.groupBox1.Controls.Add(this.comboBoxLevelType);
             this.groupBox1.Controls.Add(this.labelLevelType);
             this.groupBox1.Controls.Add(this.comboBoxType2);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.labelTypes);
             this.groupBox1.Controls.Add(this.comboBoxType1);
             this.groupBox1.Location = new System.Drawing.Point(541, 28);
             this.groupBox1.Name = "groupBox1";
@@ -610,9 +612,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.labelAbilityHidden);
+            this.groupBox2.Controls.Add(this.labelAbility2);
+            this.groupBox2.Controls.Add(this.labelAbility1);
             this.groupBox2.Controls.Add(this.comboBoxAbilityHidden);
             this.groupBox2.Controls.Add(this.comboBoxAbility2);
             this.groupBox2.Controls.Add(this.comboBoxAbility1);
@@ -623,32 +625,32 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Abilities";
             // 
-            // label10
+            // labelAbilityHidden
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 85);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 15);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Hidden:";
+            this.labelAbilityHidden.AutoSize = true;
+            this.labelAbilityHidden.Location = new System.Drawing.Point(7, 85);
+            this.labelAbilityHidden.Name = "labelAbilityHidden";
+            this.labelAbilityHidden.Size = new System.Drawing.Size(49, 15);
+            this.labelAbilityHidden.TabIndex = 1;
+            this.labelAbilityHidden.Text = "Hidden:";
             // 
-            // label9
+            // labelAbility2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 54);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 15);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Ability 2:";
+            this.labelAbility2.AutoSize = true;
+            this.labelAbility2.Location = new System.Drawing.Point(7, 54);
+            this.labelAbility2.Name = "labelAbility2";
+            this.labelAbility2.Size = new System.Drawing.Size(53, 15);
+            this.labelAbility2.TabIndex = 1;
+            this.labelAbility2.Text = "Ability 2:";
             // 
-            // label8
+            // labelAbility1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 15);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Ability 1:";
+            this.labelAbility1.AutoSize = true;
+            this.labelAbility1.Location = new System.Drawing.Point(7, 23);
+            this.labelAbility1.Name = "labelAbility1";
+            this.labelAbility1.Size = new System.Drawing.Size(53, 15);
+            this.labelAbility1.TabIndex = 1;
+            this.labelAbility1.Text = "Ability 1:";
             // 
             // comboBoxAbilityHidden
             // 
@@ -699,14 +701,14 @@
             this.comboBoxType2.Size = new System.Drawing.Size(115, 23);
             this.comboBoxType2.TabIndex = 0;
             // 
-            // label4
+            // labelTypes
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Types: ";
+            this.labelTypes.AutoSize = true;
+            this.labelTypes.Location = new System.Drawing.Point(6, 19);
+            this.labelTypes.Name = "labelTypes";
+            this.labelTypes.Size = new System.Drawing.Size(43, 15);
+            this.labelTypes.TabIndex = 1;
+            this.labelTypes.Text = "Types: ";
             // 
             // comboBoxType1
             // 
@@ -730,7 +732,7 @@
             // buttonAccept
             // 
             this.buttonAccept.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAccept.Location = new System.Drawing.Point(710, 404);
+            this.buttonAccept.Location = new System.Drawing.Point(712, 404);
             this.buttonAccept.Name = "buttonAccept";
             this.buttonAccept.Size = new System.Drawing.Size(75, 23);
             this.buttonAccept.TabIndex = 7;
@@ -741,25 +743,27 @@
             // groupBoxGenres
             // 
             this.groupBoxGenres.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxGenres.Controls.Add(this.label6);
+            this.groupBoxGenres.Controls.Add(this.comboBoxEggGroup);
+            this.groupBoxGenres.Controls.Add(this.labelEggGroup);
+            this.groupBoxGenres.Controls.Add(this.labelFemale);
             this.groupBoxGenres.Controls.Add(this.numericUpDownFemale);
-            this.groupBoxGenres.Controls.Add(this.label5);
+            this.groupBoxGenres.Controls.Add(this.labelMale);
             this.groupBoxGenres.Controls.Add(this.numericUpDownMale);
             this.groupBoxGenres.Location = new System.Drawing.Point(541, 288);
             this.groupBoxGenres.Name = "groupBoxGenres";
-            this.groupBoxGenres.Size = new System.Drawing.Size(252, 77);
+            this.groupBoxGenres.Size = new System.Drawing.Size(252, 110);
             this.groupBoxGenres.TabIndex = 8;
             this.groupBoxGenres.TabStop = false;
-            this.groupBoxGenres.Text = "Genre Probability";
+            this.groupBoxGenres.Text = "Reproduction";
             // 
-            // label6
+            // labelFemale
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(129, 23);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Female:";
+            this.labelFemale.AutoSize = true;
+            this.labelFemale.Location = new System.Drawing.Point(129, 23);
+            this.labelFemale.Name = "labelFemale";
+            this.labelFemale.Size = new System.Drawing.Size(48, 15);
+            this.labelFemale.TabIndex = 5;
+            this.labelFemale.Text = "Female:";
             // 
             // numericUpDownFemale
             // 
@@ -773,14 +777,14 @@
             0,
             0});
             // 
-            // label5
+            // labelMale
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 15);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Male:";
+            this.labelMale.AutoSize = true;
+            this.labelMale.Location = new System.Drawing.Point(6, 23);
+            this.labelMale.Name = "labelMale";
+            this.labelMale.Size = new System.Drawing.Size(36, 15);
+            this.labelMale.TabIndex = 5;
+            this.labelMale.Text = "Male:";
             // 
             // numericUpDownMale
             // 
@@ -793,6 +797,23 @@
             0,
             0,
             0});
+            // 
+            // labelEggGroup
+            // 
+            this.labelEggGroup.AutoSize = true;
+            this.labelEggGroup.Location = new System.Drawing.Point(6, 75);
+            this.labelEggGroup.Name = "labelEggGroup";
+            this.labelEggGroup.Size = new System.Drawing.Size(69, 15);
+            this.labelEggGroup.TabIndex = 6;
+            this.labelEggGroup.Text = "Egg Group: ";
+            // 
+            // comboBoxEggGroup
+            // 
+            this.comboBoxEggGroup.FormattingEnabled = true;
+            this.comboBoxEggGroup.Location = new System.Drawing.Point(82, 70);
+            this.comboBoxEggGroup.Name = "comboBoxEggGroup";
+            this.comboBoxEggGroup.Size = new System.Drawing.Size(164, 23);
+            this.comboBoxEggGroup.TabIndex = 7;
             // 
             // AddOrUpdatePokemonForm
             // 
@@ -852,13 +873,13 @@
         private System.Windows.Forms.NumericUpDown numericUpDownSpeed;
         private System.Windows.Forms.Label labelSpecialDefense;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Label SpecialAttack;
+        private System.Windows.Forms.Label labelSpecialAttack;
         private System.Windows.Forms.NumericUpDown numericUpDownSpecialAttack;
         private System.Windows.Forms.Label labelDefense;
         private System.Windows.Forms.NumericUpDown numericUpDownDefense;
         private System.Windows.Forms.Label labelAttack;
         private System.Windows.Forms.NumericUpDown numericUpDownAttack;
-        private System.Windows.Forms.Label labelHP;
+        private System.Windows.Forms.Label labelHealth;
         private System.Windows.Forms.NumericUpDown numericUpDownHealth;
         private System.Windows.Forms.Label labelSpeedEVs;
         private System.Windows.Forms.NumericUpDown numericUpDownSpeedEVs;
@@ -879,31 +900,34 @@
         private System.Windows.Forms.TextBox textBoxCategory;
         private System.Windows.Forms.NumericUpDown numericUpDownWeight;
         private System.Windows.Forms.NumericUpDown numericUpDownHeight;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelWeight;
+        private System.Windows.Forms.Label labelHeight;
         private System.Windows.Forms.PictureBox pictureBoxPoke;
         private System.Windows.Forms.Label labelImage;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox comboBoxType2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelTypes;
         private System.Windows.Forms.ComboBox comboBoxType1;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonAccept;
         private System.Windows.Forms.ComboBox comboBoxLevelType;
         private System.Windows.Forms.Label labelLevelType;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelAbilityHidden;
+        private System.Windows.Forms.Label labelAbility2;
+        private System.Windows.Forms.Label labelAbility1;
         private System.Windows.Forms.ComboBox comboBoxAbilityHidden;
         private System.Windows.Forms.ComboBox comboBoxAbility2;
         private System.Windows.Forms.ComboBox comboBoxAbility1;
         private System.Windows.Forms.GroupBox groupBoxGenres;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelFemale;
         private System.Windows.Forms.NumericUpDown numericUpDownFemale;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelMale;
         private System.Windows.Forms.NumericUpDown numericUpDownMale;
         private System.Windows.Forms.NumericUpDown numericUpDownSpecialDefense;
         private System.Windows.Forms.NumericUpDown alth;
+        private System.Windows.Forms.ComboBox comboBoxEggGroup;
+        private System.Windows.Forms.Label labelEggGroup;
+        private System.Windows.Forms.Label Ability;
     }
 }

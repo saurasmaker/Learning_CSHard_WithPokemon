@@ -54,49 +54,24 @@ namespace PokemonShowdown.Forms.PokedexTools
             }
             comboBoxLevelType.SelectedIndex = 0;
 
+            for (int i = 0; i < PokeEggGroup.EggGroupNames.Length; i++)
+            {
+                comboBoxEggGroup.Items.Add(PokeEggGroup.EggGroupNames[i]);
+            }
+            comboBoxEggGroup.SelectedIndex = 0;
+
             return;
         }
 
         private void AddPokemon()
         {
-            OPokemon p = new OPokemon();
+            pokemon = new OPokemon();
 
             if (CheckData())
             {
                 try
                 {
-                    p.Name = textBoxName.Text;
-                    p.Category = textBoxCategory.Text;
-                    p.Description = richTextBoxDescription.Text;
-                    p.Weight = Convert.ToUInt16(numericUpDownWeight.Value);
-                    p.Height = Convert.ToUInt16(numericUpDownHeight.Value);
-                    //pokemon.PictureName = pictureBoxPoke.Name;
-
-                    p.Genres[0] = Convert.ToByte(numericUpDownMale.Value);
-                    p.Genres[1] = Convert.ToByte(numericUpDownFemale.Value);
-
-                    p.Health = Convert.ToByte(numericUpDownHealth.Value);
-                    p.Attack = Convert.ToByte(numericUpDownAttack.Value);
-                    p.SpecialAttack = Convert.ToByte(numericUpDownSpecialAttack.Value);
-                    p.Defense = Convert.ToByte(numericUpDownDefense.Value);
-                    p.SpecialDefense = Convert.ToByte(numericUpDownSpecialDefense.Value);
-                    p.Speed = Convert.ToByte(numericUpDownSpeed.Value);
-
-                    p.GivedEVs[PokeStat.Health] = Convert.ToByte(numericUpDownHealthEVs.Value);
-                    p.GivedEVs[PokeStat.Attack] = Convert.ToByte(numericUpDownAttackEVs.Value);
-                    p.GivedEVs[PokeStat.Defense] = Convert.ToByte(numericUpDownDefenseEVs.Value);
-                    p.GivedEVs[PokeStat.SpecialAttack] = Convert.ToByte(numericUpDownSpecialAttackEVs.Value);
-                    p.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(numericUpDownSpecialDefenseEVs.Value);
-                    p.GivedEVs[PokeStat.Speed] = Convert.ToByte(numericUpDownSpeedEVs.Value);
-
-                    p.Types[0] = Convert.ToByte(comboBoxType1.SelectedIndex);
-                    p.Types[1] = Convert.ToByte(comboBoxType2.SelectedIndex);
-
-                    p.Abilities[0] = Convert.ToByte(comboBoxAbility1.SelectedIndex);
-                    p.Abilities[1] = Convert.ToByte(comboBoxAbility2.SelectedIndex);
-                    p.Abilities[2] = Convert.ToByte(comboBoxAbilityHidden.SelectedIndex);
-
-                    p.LevelType = Convert.ToByte(comboBoxLevelType.SelectedIndex);
+                    SetDataInPokemon();
 
                     Pokedex.SavePokemonInPokedexXML(p);
 
@@ -121,38 +96,7 @@ namespace PokemonShowdown.Forms.PokedexTools
             {
                 try
                 {
-                    pokemon.Name = textBoxName.Text;
-                    pokemon.Category = textBoxCategory.Text;
-                    pokemon.Description = richTextBoxDescription.Text;
-                    pokemon.Weight = Convert.ToUInt16(numericUpDownWeight.Value);
-                    pokemon.Height = Convert.ToUInt16(numericUpDownHeight.Value);
-                    //pokemon.PictureName = pictureBoxPoke.Name;
-
-                    pokemon.Genres[0] = Convert.ToByte(numericUpDownMale.Value);
-                    pokemon.Genres[1] = Convert.ToByte(numericUpDownFemale.Value);
-
-                    pokemon.Health = Convert.ToByte(numericUpDownHealth.Value);
-                    pokemon.Attack = Convert.ToByte(numericUpDownAttack.Value);
-                    pokemon.SpecialAttack = Convert.ToByte(numericUpDownSpecialAttack.Value);
-                    pokemon.Defense = Convert.ToByte(numericUpDownDefense.Value);
-                    pokemon.SpecialDefense = Convert.ToByte(numericUpDownSpecialDefense.Value);
-                    pokemon.Speed = Convert.ToByte(numericUpDownSpeed.Value);
-
-                    pokemon.GivedEVs[PokeStat.Health] = Convert.ToByte(numericUpDownHealthEVs.Value);
-                    pokemon.GivedEVs[PokeStat.Attack] = Convert.ToByte(numericUpDownAttackEVs.Value);
-                    pokemon.GivedEVs[PokeStat.Defense] = Convert.ToByte(numericUpDownDefenseEVs.Value);
-                    pokemon.GivedEVs[PokeStat.SpecialAttack] = Convert.ToByte(numericUpDownSpecialAttackEVs.Value);
-                    pokemon.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(numericUpDownSpecialDefenseEVs.Value);
-                    pokemon.GivedEVs[PokeStat.Speed] = Convert.ToByte(numericUpDownSpeedEVs.Value);
-
-                    pokemon.Types[0] = Convert.ToByte(comboBoxType1.SelectedIndex);
-                    pokemon.Types[1] = Convert.ToByte(comboBoxType2.SelectedIndex);
-
-                    pokemon.Abilities[0] = Convert.ToByte(comboBoxAbility1.SelectedIndex);
-                    pokemon.Abilities[1] = Convert.ToByte(comboBoxAbility2.SelectedIndex);
-                    pokemon.Abilities[2] = Convert.ToByte(comboBoxAbilityHidden.SelectedIndex);
-
-                    pokemon.LevelType = Convert.ToByte(comboBoxLevelType.SelectedIndex);
+                    SetDataInPokemon();
 
                     Pokedex.EditPokemonFromPokedexXML(pokemon.Id, pokemon);
 
@@ -161,7 +105,7 @@ namespace PokemonShowdown.Forms.PokedexTools
                     Dispose();
 
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     MessageBox.Show("There was a problem updating the Pokémon. Please, check the Log for more information.", "Add Pokémon Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -172,6 +116,45 @@ namespace PokemonShowdown.Forms.PokedexTools
             return;
         }
 
+
+        private void SetDataInPokemon()
+        {
+            pokemon.Name = textBoxName.Text;
+            pokemon.Category = textBoxCategory.Text;
+            pokemon.Description = richTextBoxDescription.Text;
+            pokemon.Weight = Convert.ToUInt16(numericUpDownWeight.Value);
+            pokemon.Height = Convert.ToUInt16(numericUpDownHeight.Value);
+            //pokemon.PictureName = pictureBoxPoke.Name;
+
+            pokemon.Genres[0] = Convert.ToByte(numericUpDownMale.Value);
+            pokemon.Genres[1] = Convert.ToByte(numericUpDownFemale.Value);
+
+            pokemon.Health = Convert.ToByte(numericUpDownHealth.Value);
+            pokemon.Attack = Convert.ToByte(numericUpDownAttack.Value);
+            pokemon.SpecialAttack = Convert.ToByte(numericUpDownSpecialAttack.Value);
+            pokemon.Defense = Convert.ToByte(numericUpDownDefense.Value);
+            pokemon.SpecialDefense = Convert.ToByte(numericUpDownSpecialDefense.Value);
+            pokemon.Speed = Convert.ToByte(numericUpDownSpeed.Value);
+
+            pokemon.GivedEVs[PokeStat.Health] = Convert.ToByte(numericUpDownHealthEVs.Value);
+            pokemon.GivedEVs[PokeStat.Attack] = Convert.ToByte(numericUpDownAttackEVs.Value);
+            pokemon.GivedEVs[PokeStat.Defense] = Convert.ToByte(numericUpDownDefenseEVs.Value);
+            pokemon.GivedEVs[PokeStat.SpecialAttack] = Convert.ToByte(numericUpDownSpecialAttackEVs.Value);
+            pokemon.GivedEVs[PokeStat.SpecialDefense] = Convert.ToByte(numericUpDownSpecialDefenseEVs.Value);
+            pokemon.GivedEVs[PokeStat.Speed] = Convert.ToByte(numericUpDownSpeedEVs.Value);
+
+            pokemon.Types[0] = Convert.ToByte(comboBoxType1.SelectedIndex);
+            pokemon.Types[1] = Convert.ToByte(comboBoxType2.SelectedIndex);
+
+            pokemon.Abilities[0] = Convert.ToByte(comboBoxAbility1.SelectedIndex);
+            pokemon.Abilities[1] = Convert.ToByte(comboBoxAbility2.SelectedIndex);
+            pokemon.Abilities[2] = Convert.ToByte(comboBoxAbilityHidden.SelectedIndex);
+
+            pokemon.LevelType = Convert.ToByte(comboBoxLevelType.SelectedIndex);
+            pokemon.EggGroup = Convert.ToByte(comboBoxEggGroup.SelectedIndex);
+
+            return;
+        }
 
         private bool CheckData()
         {
@@ -201,6 +184,12 @@ namespace PokemonShowdown.Forms.PokedexTools
             if (comboBoxAbility1.Text == null || comboBoxType1.Text == "" || comboBoxAbility1.SelectedIndex == 0)
             {
                 MessageBox.Show("You can not create a Pokémon without an Ability.", "Field Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            if (comboBoxEggGroup.Text == null || comboBoxEggGroup.Text == "" || comboBoxEggGroup.SelectedIndex == 0)
+            {
+                MessageBox.Show("You can not create a Pokémon without an Egg Group.", "Field Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 

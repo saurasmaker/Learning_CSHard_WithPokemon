@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
@@ -46,6 +48,7 @@
             this.btnPokedexTools = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.panelLeft.SuspendLayout();
             this.panelTeamsSubmenu.SuspendLayout();
             this.panelPokedexToolsSubmenu.SuspendLayout();
@@ -78,6 +81,7 @@
             // panelLeft
             // 
             this.panelLeft.AutoScroll = true;
+            this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLeft.Controls.Add(this.panelTeamsSubmenu);
             this.panelLeft.Controls.Add(this.btnTeams);
             this.panelLeft.Controls.Add(this.panelPokedexToolsSubmenu);
@@ -95,184 +99,219 @@
             this.panelTeamsSubmenu.Controls.Add(this.btnEditTeam);
             this.panelTeamsSubmenu.Controls.Add(this.btnCreateTeam);
             this.panelTeamsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTeamsSubmenu.Location = new System.Drawing.Point(0, 397);
+            this.panelTeamsSubmenu.Location = new System.Drawing.Point(0, 374);
             this.panelTeamsSubmenu.Name = "panelTeamsSubmenu";
-            this.panelTeamsSubmenu.Size = new System.Drawing.Size(250, 125);
+            this.panelTeamsSubmenu.Size = new System.Drawing.Size(248, 125);
             this.panelTeamsSubmenu.TabIndex = 2;
             // 
             // btnRemoveTeam
             // 
+            this.btnRemoveTeam.BackColor = System.Drawing.SystemColors.Control;
             this.btnRemoveTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRemoveTeam.FlatAppearance.BorderSize = 0;
             this.btnRemoveTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveTeam.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRemoveTeam.Location = new System.Drawing.Point(0, 80);
             this.btnRemoveTeam.Name = "btnRemoveTeam";
             this.btnRemoveTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnRemoveTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnRemoveTeam.Size = new System.Drawing.Size(248, 40);
             this.btnRemoveTeam.TabIndex = 0;
             this.btnRemoveTeam.Text = "Remove Team";
             this.btnRemoveTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemoveTeam.UseVisualStyleBackColor = true;
+            this.btnRemoveTeam.UseVisualStyleBackColor = false;
             // 
             // btnEditTeam
             // 
+            this.btnEditTeam.BackColor = System.Drawing.SystemColors.Control;
             this.btnEditTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnEditTeam.FlatAppearance.BorderSize = 0;
             this.btnEditTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditTeam.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnEditTeam.Location = new System.Drawing.Point(0, 40);
             this.btnEditTeam.Name = "btnEditTeam";
             this.btnEditTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnEditTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnEditTeam.Size = new System.Drawing.Size(248, 40);
             this.btnEditTeam.TabIndex = 0;
             this.btnEditTeam.Text = "Edit Team";
             this.btnEditTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditTeam.UseVisualStyleBackColor = true;
+            this.btnEditTeam.UseVisualStyleBackColor = false;
             // 
             // btnCreateTeam
             // 
+            this.btnCreateTeam.BackColor = System.Drawing.SystemColors.Control;
             this.btnCreateTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCreateTeam.FlatAppearance.BorderSize = 0;
             this.btnCreateTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateTeam.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCreateTeam.Location = new System.Drawing.Point(0, 0);
             this.btnCreateTeam.Name = "btnCreateTeam";
             this.btnCreateTeam.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCreateTeam.Size = new System.Drawing.Size(250, 40);
+            this.btnCreateTeam.Size = new System.Drawing.Size(248, 40);
             this.btnCreateTeam.TabIndex = 0;
             this.btnCreateTeam.Text = "Create Team";
             this.btnCreateTeam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreateTeam.UseVisualStyleBackColor = true;
+            this.btnCreateTeam.UseVisualStyleBackColor = false;
             // 
             // btnTeams
             // 
+            this.btnTeams.BackColor = System.Drawing.SystemColors.Control;
             this.btnTeams.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTeams.FlatAppearance.BorderSize = 0;
             this.btnTeams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeams.Location = new System.Drawing.Point(0, 352);
+            this.btnTeams.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTeams.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTeams.Location = new System.Drawing.Point(0, 329);
             this.btnTeams.Name = "btnTeams";
             this.btnTeams.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTeams.Size = new System.Drawing.Size(250, 45);
+            this.btnTeams.Size = new System.Drawing.Size(248, 45);
             this.btnTeams.TabIndex = 0;
             this.btnTeams.Text = "Teams";
             this.btnTeams.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTeams.UseVisualStyleBackColor = true;
+            this.btnTeams.UseVisualStyleBackColor = false;
             this.btnTeams.Click += new System.EventHandler(this.btnTeams_Click);
             // 
             // panelPokedexToolsSubmenu
             // 
+            this.panelPokedexToolsSubmenu.BackColor = System.Drawing.SystemColors.Control;
             this.panelPokedexToolsSubmenu.Controls.Add(this.btnShowPokedex);
             this.panelPokedexToolsSubmenu.Controls.Add(this.btnRemovePokeFromPokedex);
             this.panelPokedexToolsSubmenu.Controls.Add(this.btnUpdatePokeFromPokedex);
             this.panelPokedexToolsSubmenu.Controls.Add(this.btnAddPokeToPokedex);
             this.panelPokedexToolsSubmenu.Controls.Add(this.btnShowPokeFromPokedex);
             this.panelPokedexToolsSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPokedexToolsSubmenu.Location = new System.Drawing.Point(0, 145);
+            this.panelPokedexToolsSubmenu.Location = new System.Drawing.Point(0, 127);
             this.panelPokedexToolsSubmenu.Name = "panelPokedexToolsSubmenu";
-            this.panelPokedexToolsSubmenu.Size = new System.Drawing.Size(250, 207);
+            this.panelPokedexToolsSubmenu.Size = new System.Drawing.Size(248, 202);
             this.panelPokedexToolsSubmenu.TabIndex = 1;
             // 
             // btnShowPokedex
             // 
+            this.btnShowPokedex.BackColor = System.Drawing.SystemColors.Control;
             this.btnShowPokedex.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnShowPokedex.FlatAppearance.BorderSize = 0;
             this.btnShowPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPokedex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnShowPokedex.Location = new System.Drawing.Point(0, 160);
             this.btnShowPokedex.Name = "btnShowPokedex";
             this.btnShowPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnShowPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnShowPokedex.Size = new System.Drawing.Size(248, 40);
             this.btnShowPokedex.TabIndex = 0;
             this.btnShowPokedex.Text = "Show Pokédex";
             this.btnShowPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowPokedex.UseVisualStyleBackColor = true;
+            this.btnShowPokedex.UseVisualStyleBackColor = false;
             // 
             // btnRemovePokeFromPokedex
             // 
+            this.btnRemovePokeFromPokedex.BackColor = System.Drawing.SystemColors.Control;
             this.btnRemovePokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRemovePokeFromPokedex.FlatAppearance.BorderSize = 0;
             this.btnRemovePokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemovePokeFromPokedex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnRemovePokeFromPokedex.Location = new System.Drawing.Point(0, 120);
             this.btnRemovePokeFromPokedex.Name = "btnRemovePokeFromPokedex";
             this.btnRemovePokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnRemovePokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnRemovePokeFromPokedex.Size = new System.Drawing.Size(248, 40);
             this.btnRemovePokeFromPokedex.TabIndex = 0;
             this.btnRemovePokeFromPokedex.Text = "Remove Pokémon";
             this.btnRemovePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemovePokeFromPokedex.UseVisualStyleBackColor = true;
+            this.btnRemovePokeFromPokedex.UseVisualStyleBackColor = false;
             // 
             // btnUpdatePokeFromPokedex
             // 
+            this.btnUpdatePokeFromPokedex.BackColor = System.Drawing.SystemColors.Control;
             this.btnUpdatePokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUpdatePokeFromPokedex.FlatAppearance.BorderSize = 0;
             this.btnUpdatePokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdatePokeFromPokedex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnUpdatePokeFromPokedex.Location = new System.Drawing.Point(0, 80);
             this.btnUpdatePokeFromPokedex.Name = "btnUpdatePokeFromPokedex";
             this.btnUpdatePokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnUpdatePokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnUpdatePokeFromPokedex.Size = new System.Drawing.Size(248, 40);
             this.btnUpdatePokeFromPokedex.TabIndex = 0;
             this.btnUpdatePokeFromPokedex.Text = "Update Pokémon";
             this.btnUpdatePokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdatePokeFromPokedex.UseVisualStyleBackColor = true;
+            this.btnUpdatePokeFromPokedex.UseVisualStyleBackColor = false;
             this.btnUpdatePokeFromPokedex.Click += new System.EventHandler(this.btnUpdatePokeFromPokedex_Click);
             // 
             // btnAddPokeToPokedex
             // 
+            this.btnAddPokeToPokedex.BackColor = System.Drawing.SystemColors.Control;
             this.btnAddPokeToPokedex.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAddPokeToPokedex.FlatAppearance.BorderSize = 0;
             this.btnAddPokeToPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPokeToPokedex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAddPokeToPokedex.Location = new System.Drawing.Point(0, 40);
             this.btnAddPokeToPokedex.Name = "btnAddPokeToPokedex";
             this.btnAddPokeToPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddPokeToPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnAddPokeToPokedex.Size = new System.Drawing.Size(248, 40);
             this.btnAddPokeToPokedex.TabIndex = 0;
             this.btnAddPokeToPokedex.Text = "Add Pokémon";
             this.btnAddPokeToPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddPokeToPokedex.UseVisualStyleBackColor = true;
+            this.btnAddPokeToPokedex.UseVisualStyleBackColor = false;
             this.btnAddPokeToPokedex.Click += new System.EventHandler(this.btnAddPokeToPokedex_Click);
             // 
             // btnShowPokeFromPokedex
             // 
+            this.btnShowPokeFromPokedex.BackColor = System.Drawing.SystemColors.Control;
             this.btnShowPokeFromPokedex.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnShowPokeFromPokedex.FlatAppearance.BorderSize = 0;
             this.btnShowPokeFromPokedex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPokeFromPokedex.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnShowPokeFromPokedex.Location = new System.Drawing.Point(0, 0);
             this.btnShowPokeFromPokedex.Name = "btnShowPokeFromPokedex";
             this.btnShowPokeFromPokedex.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnShowPokeFromPokedex.Size = new System.Drawing.Size(250, 40);
+            this.btnShowPokeFromPokedex.Size = new System.Drawing.Size(248, 40);
             this.btnShowPokeFromPokedex.TabIndex = 0;
             this.btnShowPokeFromPokedex.Text = "Show Pokémon";
             this.btnShowPokeFromPokedex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShowPokeFromPokedex.UseVisualStyleBackColor = true;
+            this.btnShowPokeFromPokedex.UseVisualStyleBackColor = false;
             this.btnShowPokeFromPokedex.Click += new System.EventHandler(this.btnShowPokeFromPokedex_Click);
             // 
             // btnPokedexTools
             // 
+            this.btnPokedexTools.BackColor = System.Drawing.SystemColors.Control;
             this.btnPokedexTools.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPokedexTools.FlatAppearance.BorderSize = 0;
             this.btnPokedexTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPokedexTools.Location = new System.Drawing.Point(0, 100);
+            this.btnPokedexTools.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPokedexTools.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPokedexTools.Location = new System.Drawing.Point(0, 82);
             this.btnPokedexTools.Name = "btnPokedexTools";
             this.btnPokedexTools.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnPokedexTools.Size = new System.Drawing.Size(250, 45);
+            this.btnPokedexTools.Size = new System.Drawing.Size(248, 45);
             this.btnPokedexTools.TabIndex = 0;
             this.btnPokedexTools.Text = "Pokédex Tools";
             this.btnPokedexTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPokedexTools.UseVisualStyleBackColor = true;
+            this.btnPokedexTools.UseVisualStyleBackColor = false;
             this.btnPokedexTools.Click += new System.EventHandler(this.btnPokedexTools_Click);
             // 
             // panelLogo
             // 
+            this.panelLogo.BackColor = System.Drawing.SystemColors.Control;
+            this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 100);
+            this.panelLogo.Size = new System.Drawing.Size(248, 82);
             this.panelLogo.TabIndex = 0;
             // 
             // panelChildForm
             // 
+            this.panelChildForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 49);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.Size = new System.Drawing.Size(942, 534);
             this.panelChildForm.TabIndex = 4;
+            // 
+            // imageList
+            // 
+            this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "1280px-International_Pokémon_logo.svg.png");
             // 
             // Index
             // 
@@ -285,6 +324,7 @@
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            this.MaximumSize = new System.Drawing.Size(1208, 644);
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Index";
@@ -316,5 +356,6 @@
         private System.Windows.Forms.Button btnEditTeam;
         private System.Windows.Forms.Button btnCreateTeam;
         private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.ImageList imageList;
     }
 }

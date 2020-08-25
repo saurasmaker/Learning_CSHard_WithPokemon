@@ -195,6 +195,7 @@ namespace PokemonShowdown.Pokemon
             genres.Add(new XElement("male", p.Genres[0]));
             genres.Add(new XElement("female", p.Genres[1]));
             pokemon.Add(genres);
+            pokemon.Add(new XElement("eggGroup", p.EggGroup));
 
             pokemon.Add(new XElement("levelType", p.LevelType));
 
@@ -249,6 +250,7 @@ namespace PokemonShowdown.Pokemon
                 string s = genres.Elements().ElementAt(i).Value;
                 p.Genres[i] = Convert.ToByte(s);
             }
+            p.EggGroup = Convert.ToByte(e.Element("eggGroup").Value);
 
             p.LevelType = Convert.ToByte(e.Element("levelType").Value);
 
@@ -289,6 +291,7 @@ namespace PokemonShowdown.Pokemon
             XElement genres = pokemon.Element("genres");
             for (int i = 0; i < genres.Elements().Count(); ++i)
                 genres.Elements().ElementAt(i).Value = p.Genres[i].ToString();
+            pokemon.Element("eggGroup").Value = p.EggGroup.ToString();
 
             pokemon.Element("levelType").Value = p.LevelType.ToString();
 

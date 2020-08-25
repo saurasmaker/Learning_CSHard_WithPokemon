@@ -29,6 +29,7 @@
       <male>50</male>
       <female>50</female>
     </genres>
+	<eggGroup>0</eggGroup>
     <levelType>0</levelType>
     <healthEV>0</healthEV>
     <attackEV>0</attackEV>
@@ -62,6 +63,7 @@
       <male>50</male>
       <female>50</female>
     </genres>
+	<eggGroup>0</eggGroup>
     <levelType>3</levelType>
     <healthEV>1</healthEV>
     <attackEV>0</attackEV>

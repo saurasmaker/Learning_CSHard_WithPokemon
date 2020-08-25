@@ -30,6 +30,7 @@ namespace PokemonShowdown.Pokemon
         private byte[] givedEVs;
         private byte[] genres;
         private byte levelType;
+        private byte eggGroup;
 
 
 
@@ -69,9 +70,10 @@ namespace PokemonShowdown.Pokemon
             "\n Special Defense: " + SpecialDefense +
             "\n Speed: " + Speed + 
 
-            "\n\n ---Genres Probability---" +
+            "\n\n ---Reproduction---" +
             "\n  -Male: " + Genres[0] +
             "\n  -Female: " + Genres[1] +
+            "\n  -Egg Group: " + EggGroup +
 
             "\n\n ---EVs it Gives--- " +
             "\n Health: " + GivedEVs[PokeStat.Health] +
@@ -139,33 +141,23 @@ namespace PokemonShowdown.Pokemon
         public byte[] GivedEVs
         {
             get { return givedEVs; }
-            set
-            {
+            set{
                 givedEVs = new byte[6] { 0, 0, 0, 0, 0, 0 };
 
                 for (byte i = 0; i < 6; ++i)
-                    if (value[i] > 255)
-                    {
+                    if (value[i] > 255){
                         Console.WriteLine("Not valid EVs {0} in position {1}", PokeStat.StatsNames[i], i);
                         return;
                     }
-                    else { 
-                        givedEVs[i] = value[i]; 
-                    }
-
+                    else givedEVs[i] = value[i]; 
+                    
             }
         }
 
         public byte[] Genres
         {
-            get
-            {
-                return genres;
-            }
-            set
-            {
-                genres = value;
-            }
+            get { return genres; }
+            set { genres = value; }
         }
 
         public byte LevelType { 
@@ -180,9 +172,22 @@ namespace PokemonShowdown.Pokemon
             }
         }
 
-        
-        
-        
+        public byte EggGroup
+        {
+            get
+            {
+                return eggGroup;
+            }
+            set
+            {
+                if (value < 16) eggGroup = value;
+                else Console.WriteLine("Not valid Egg Group value");
+            }
+        }
+
+
+
+
         #endregion
 
     }
