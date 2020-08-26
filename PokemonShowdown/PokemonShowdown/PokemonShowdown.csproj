@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="img\" />
+    <Folder Include="Pokemon\Items\" />
     <Folder Include="saves\img\" />
   </ItemGroup>
 

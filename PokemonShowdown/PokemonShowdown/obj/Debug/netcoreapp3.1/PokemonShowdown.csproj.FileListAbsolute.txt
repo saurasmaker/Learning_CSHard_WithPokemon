@@ -49,3 +49,5 @@ C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShow
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.AddOrUpdatePokemonForm.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.SearchPokemonByName.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Properties.Resources.resources
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.CreateOrUpdateTeamForm.resources
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.SearchTeamByName.resources

@@ -8,7 +8,7 @@ namespace PokemonShowdown.Pokemon
     class PokeStat
     {
         public static string[] StatsNames = new string[] {
-            "health", "attack", "specialAttack", "defense", "specialDefense", "speed"
+            "Health", "Attack", "Special Attack", "Defense", "Special Defense", "Speed", "Precision", "Evasion"
         };
 
         public static byte Health = 0;
@@ -17,5 +17,7 @@ namespace PokemonShowdown.Pokemon
         public static byte Defense = 3;
         public static byte SpecialDefense = 4;
         public static byte Speed = 5;
+        public static byte Precision = 6;
+        public static byte Evasion = 7;
     }
 }

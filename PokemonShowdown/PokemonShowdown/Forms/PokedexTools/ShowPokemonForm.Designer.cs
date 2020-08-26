@@ -65,7 +65,7 @@
             this.textBoxSearchPoke.ForeColor = System.Drawing.Color.DarkGray;
             this.textBoxSearchPoke.Location = new System.Drawing.Point(93, 28);
             this.textBoxSearchPoke.Name = "textBoxSearchPoke";
-            this.textBoxSearchPoke.Size = new System.Drawing.Size(302, 23);
+            this.textBoxSearchPoke.Size = new System.Drawing.Size(546, 23);
             this.textBoxSearchPoke.TabIndex = 2;
             this.textBoxSearchPoke.Text = "Enter the name of a pokémon...";
             this.textBoxSearchPoke.Enter += new System.EventHandler(this.textBoxSearchPoke_Enter);
@@ -81,7 +81,7 @@
             this.richTextBoxShowPoke.Name = "richTextBoxShowPoke";
             this.richTextBoxShowPoke.ReadOnly = true;
             this.richTextBoxShowPoke.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBoxShowPoke.Size = new System.Drawing.Size(383, 97);
+            this.richTextBoxShowPoke.Size = new System.Drawing.Size(627, 98);
             this.richTextBoxShowPoke.TabIndex = 3;
             this.richTextBoxShowPoke.Text = "";
             // 
@@ -90,7 +90,7 @@
             this.pictureBoxPokemon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxPokemon.Location = new System.Drawing.Point(13, 159);
             this.pictureBoxPokemon.Name = "pictureBoxPokemon";
-            this.pictureBoxPokemon.Size = new System.Drawing.Size(382, 249);
+            this.pictureBoxPokemon.Size = new System.Drawing.Size(252, 249);
             this.pictureBoxPokemon.TabIndex = 4;
             this.pictureBoxPokemon.TabStop = false;
             // 
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 447);
+            this.ClientSize = new System.Drawing.Size(651, 447);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.richTextBoxShowPoke);

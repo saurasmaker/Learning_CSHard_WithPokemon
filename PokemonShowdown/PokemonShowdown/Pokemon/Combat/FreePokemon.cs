@@ -7,9 +7,13 @@ namespace PokemonShowdown.Pokemon
     class FreePokemon : OPokemon
     {
         #region Attributes
-        private byte[] iVs;
-        public bool Shyni { get; set; }
 
+        private byte genre;
+        private byte nature;
+        private byte[] iVs;
+
+        public bool Shyni { get; set; }
+        
         #endregion
 
 
@@ -43,7 +47,24 @@ namespace PokemonShowdown.Pokemon
             }
         }
 
-        
+        public byte Genre
+        {
+            get { return genre; }
+            set {
+                if (value < 2) genre = value;
+                else genre = 0;      
+            }
+        }
+        public byte Nature
+        {
+            get { return nature; }
+            set {
+                if (value < 25) nature = value;
+                else nature = 0;      
+            }
+        }
+
+
 
 
         #endregion
