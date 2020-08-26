@@ -12,6 +12,12 @@ namespace PokemonShowdown.Pokemon
         private byte nature;
         private byte[] iVs;
 
+        private PokeMove[] actualMoves; //
+        private List<byte> learnedMoves; //Moves Id. Movements that the pokémon has learned throughout its life.
+        private List<byte> willLearnByLevel; //Moves Id. 100 position vector. Each position represents a level. The number stored within each position represents the move the Pokémon will learn at that level.
+        private List<byte> eggMoves; //Moves Id. Movements that the pokémon can learn by breeding.
+        private List<byte> canLearnMoves; //Moves Id. Movements that the pokémon can learn byt MT or a tutor. 
+
         public bool Shyni { get; set; }
         
         #endregion
@@ -62,6 +68,12 @@ namespace PokemonShowdown.Pokemon
                 if (value < 25) nature = value;
                 else nature = 0;      
             }
+        }
+
+        public PokeMove[] ActualMoves
+        {
+            get { if (actualMoves == null) actualMoves = new PokeMove[4]; return actualMoves; }
+            set { actualMoves = value; }
         }
 
 
