@@ -307,8 +307,11 @@ namespace PokemonShowdown.Forms.PokedexTools
         }
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-            if (pokemon != null) UpdatePokemon();
-            else AddPokemon();
+            if (pokemon != null) {
+                UpdatePokemon();
+                Log.Execute("Pokemon updated");
+            }
+            else { AddPokemon(); Log.Execute("Pokémon added."); }
 
             return;
         }

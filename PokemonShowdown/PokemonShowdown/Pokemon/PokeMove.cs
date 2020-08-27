@@ -57,6 +57,11 @@ namespace PokemonShowdown.Pokemon
 
 
         #region Methods
+        public void Use()
+        {
+
+            return;
+        }
         #endregion
 
         #region Getters & Setters
@@ -191,8 +196,6 @@ namespace PokemonShowdown.Pokemon
                 else probabilityModifierEnemyVolatileStatus = value;
             }
         }
-
-
 
         #endregion
 

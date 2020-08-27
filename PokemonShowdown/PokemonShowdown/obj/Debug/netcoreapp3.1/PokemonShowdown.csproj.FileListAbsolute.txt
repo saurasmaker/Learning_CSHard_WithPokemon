@@ -51,3 +51,24 @@ C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShow
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Properties.Resources.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.CreateOrUpdateTeamForm.resources
 C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.SearchTeamByName.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csprojAssemblyReference.cache
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.Index.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.AddOrUpdatePokemonForm.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.SearchPokemonByName.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.PokedexTools.ShowPokemonForm.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.CreateOrUpdateTeamForm.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.TeamsTools.SearchTeamByName.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Properties.Resources.resources
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csproj.GenerateResource.cache
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.AssemblyInfoInputs.cache
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.AssemblyInfo.cs
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.csproj.CoreCompileInputs.cache
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.dll
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.pdb
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.exe
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.deps.json
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.runtimeconfig.json
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.runtimeconfig.dev.json
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.dll
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.pdb
+D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.genruntimeconfig.cache

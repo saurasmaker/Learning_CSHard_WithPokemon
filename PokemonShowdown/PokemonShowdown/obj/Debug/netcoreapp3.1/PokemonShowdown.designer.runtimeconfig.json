@@ -6,9 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\saura\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\saura\\.nuget\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "C:\\Users\\apedr\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\apedr\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

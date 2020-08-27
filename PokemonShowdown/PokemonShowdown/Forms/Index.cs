@@ -16,9 +16,13 @@ namespace PokemonShowdown.Forms
         {
             InitializeComponent();
             HideSubMenus();
+            Log.Execute("Application initilizated.");
         }
 
-       
+       private void index_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Log.Execute("Application closed.");
+        }
 
         private void btnPokedexTools_Click(object sender, EventArgs e)
         {

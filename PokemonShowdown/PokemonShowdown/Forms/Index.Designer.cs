@@ -158,7 +158,7 @@
             this.btnTeams.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTeams.FlatAppearance.BorderSize = 0;
             this.btnTeams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeams.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTeams.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTeams.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnTeams.Location = new System.Drawing.Point(0, 329);
             this.btnTeams.Name = "btnTeams";
@@ -274,7 +274,7 @@
             this.btnPokedexTools.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPokedexTools.FlatAppearance.BorderSize = 0;
             this.btnPokedexTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPokedexTools.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPokedexTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPokedexTools.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnPokedexTools.Location = new System.Drawing.Point(0, 82);
             this.btnPokedexTools.Name = "btnPokedexTools";

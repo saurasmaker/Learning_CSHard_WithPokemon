@@ -38,4 +38,38 @@
     <specialDefenseEV>0</specialDefenseEV>
     <speedEV>0</speedEV>
   </pokemon>
+  <pokemon id="1">
+    <name>Alba</name>
+    <category>Humana</category>
+    <description>Niña mala</description>
+    <height>4</height>
+    <weight>2</weight>
+    <types>
+      <type>2</type>
+      <type>11</type>
+    </types>
+    <health>10</health>
+    <attack>4</attack>
+    <specialAttack>8</specialAttack>
+    <defense>2</defense>
+    <specialDefense>5</specialDefense>
+    <speed>3</speed>
+    <abilities>
+      <ability>1</ability>
+      <ability>0</ability>
+      <hidden>0</hidden>
+    </abilities>
+    <genres>
+      <male>50</male>
+      <female>50</female>
+    </genres>
+    <eggGroup>1</eggGroup>
+    <levelType>0</levelType>
+    <healthEV>0</healthEV>
+    <attackEV>0</attackEV>
+    <specialAttackEV>0</specialAttackEV>
+    <defenseEV>0</defenseEV>
+    <specialDefenseEV>0</specialDefenseEV>
+    <speedEV>0</speedEV>
+  </pokemon>
 </pokedex>
