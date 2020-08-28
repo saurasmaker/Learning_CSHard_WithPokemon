@@ -82,6 +82,7 @@ namespace PokemonShowdown.Forms.PokedexTools
 
                 }catch(Exception e)
                 {
+                    Log.Execute("Error adding " + pokemon.Name + ".", e);
                     MessageBox.Show("There was a problem adding the Pokémon. Please, check the Log for more information.", "Add Pokémon Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }

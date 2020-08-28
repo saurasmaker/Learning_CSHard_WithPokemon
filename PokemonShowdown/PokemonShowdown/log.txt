@@ -5,3 +5,4 @@
 27/08/2020 18:01:16 => Application initilizated.
 27/08/2020 18:04:09 => Application initilizated.
 27/08/2020 18:04:58 => Pokémon added.
+28/08/2020 7:37:35 => Application initilizated.

@@ -872,7 +872,6 @@
         private System.Windows.Forms.Label labelSpeed;
         private System.Windows.Forms.NumericUpDown numericUpDownSpeed;
         private System.Windows.Forms.Label labelSpecialDefense;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Label labelSpecialAttack;
         private System.Windows.Forms.NumericUpDown numericUpDownSpecialAttack;
         private System.Windows.Forms.Label labelDefense;
@@ -925,9 +924,7 @@
         private System.Windows.Forms.Label labelMale;
         private System.Windows.Forms.NumericUpDown numericUpDownMale;
         private System.Windows.Forms.NumericUpDown numericUpDownSpecialDefense;
-        private System.Windows.Forms.NumericUpDown alth;
         private System.Windows.Forms.ComboBox comboBoxEggGroup;
         private System.Windows.Forms.Label labelEggGroup;
-        private System.Windows.Forms.Label Ability;
     }
 }

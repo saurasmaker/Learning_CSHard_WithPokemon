@@ -115,14 +115,14 @@ namespace PokemonShowdown.Pokemon
             return p;
         }
 
-        public static void EditPokemonFromPokedexXML(string id, OPokemon p)
+        public static void EditPokemonFromPokedexXML(int id, OPokemon p)
         {
             XDocument doc = GetXMLDocument();
             XElement f = null;
             
             if (doc != null)
                 foreach (XElement e in doc.Root.Elements())
-                    if (e.Attribute("id").Value.ToUpper().Equals(id.ToUpper()))
+                    if (Convert.ToInt32(e.Attribute("id").Value).Equals(id))
                         f = e;
             
             if(f!=null && p!=null)
@@ -233,7 +233,7 @@ namespace PokemonShowdown.Pokemon
         {
 
             OPokemon p = new OPokemon();
-            p.Id = e.Attribute("id").Value;
+            p.Id = Convert.ToInt32(e.Attribute("id").Value);
             p.Name = e.Element("name").Value;
             p.Category = e.Element("category").Value;
             p.Description = e.Element("description").Value;

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace PokemonShowdown.Pokemon
 {
-    class NonVolatilePokeStatus
+    class VolatilePokeStatus
     {
         public static string[] StatusNames = new string[] {
             "Bound", "Can not Scape", "Confusion", "Curse", "Embargo", "Encore", "Flinch", "Heal Block", "Identified", "Infatuation",
-            "Leech Seed", "Nifhtmare", "Perish Song", "Taunt", "Telekinesis", "Torment", 
+            "Leech Seed", "Nightmare", "Perish Song", "Taunt", "Telekinesis", "Torment", 
         };
 
         public static byte Bound = 0;
@@ -22,7 +22,7 @@ namespace PokemonShowdown.Pokemon
         public static byte Identified = 8;
         public static byte Infatuation = 9;
         public static byte LeechSeed = 10;
-        public static byte Nifhtmare = 11;
+        public static byte Nightmare = 11;
         public static byte PerishSong = 12;
         public static byte Taunt = 13;
         public static byte Telekinesis = 14;

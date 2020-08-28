@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Alba\\Escritorio\\Programación Iván\\Proyectos_Programacion\\CSharp\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj": {}
+    "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj": {}
   },
   "projects": {
-    "D:\\Alba\\Escritorio\\Programación Iván\\Proyectos_Programacion\\CSharp\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj": {
+    "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Alba\\Escritorio\\Programación Iván\\Proyectos_Programacion\\CSharp\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+        "projectUniqueName": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
         "projectName": "PokemonShowdown",
-        "projectPath": "D:\\Alba\\Escritorio\\Programación Iván\\Proyectos_Programacion\\CSharp\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
-        "packagesPath": "C:\\Users\\apedr\\.nuget\\packages\\",
-        "outputPath": "D:\\Alba\\Escritorio\\Programación Iván\\Proyectos_Programacion\\CSharp\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
+        "projectPath": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\PokemonShowdown.csproj",
+        "packagesPath": "C:\\Users\\saura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\saura\\Proyectos_Programacion\\C#\\Learning_CSharp_WithPokemon\\PokemonShowdown\\PokemonShowdown\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\apedr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\saura\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

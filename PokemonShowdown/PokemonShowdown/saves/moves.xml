@@ -1,6 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <moves>
-	
+	<move id = "0">
+		<name>Zero</name>
+		<description>Zero</description>
+		<type>0</type>
+		<category>0</category>
+		<accuarcy>0</accuarcy>
+		<damage>0</damage>
+		<recover>0</recover>
+		<repeat>0</repeat>
+		
+		<modifierStats>
+			<health>0</health>
+			<attack>0</attack>
+			<specialAttack>0</specialAttack>
+			<defense>0</defense>
+			<specialDefense>0</specialDefense>
+			<speed>0</speed>
+			<precision>0</precision>
+			<evasion>0</evasion>
+		</modifierStats>
+		<probabilityModifierStats>0</probabilityModifierStats>
+		
+		<modifierEnemyStat>
+			<health>0</health>
+			<attack>0</attack>
+			<specialAttack>0</specialAttack>
+			<defense>0</defense>
+			<specialDefense>0</specialDefense>
+			<speed>0</speed>
+			<precision>0</precision>
+			<evasion>0</evasion>
+		</modifierEnemyStat>
+		<probabilityModifierEnemyStats>0</probabilityModifierEnemyStats>
+
+		<modifierStatus>
+			<burn>0</burn>
+			<freeze>0</freeze>
+			<paralysis>0</paralysis>
+			<poison>0</poison>
+			<badlyPoison>0</badlyPoison>
+			<sleep>0</sleep>
+		</modifierStatus>
+		<probabilityModifierStatus>0</probabilityModifierStatus>
+
+		<modifierEnemyStatus>
+			<burn>0</burn>
+			<freeze>0</freeze>
+			<paralysis>0</paralysis>
+			<poison>0</poison>
+			<badlyPoison>0</badlyPoison>
+			<sleep>0</sleep>			
+		</modifierEnemyStatus>
+		<probabilityModifierEnemyStatus>0</probabilityModifierEnemyStatus>
+
+		<modifierVolatileStatus>
+			<bound>0</bound>
+			<canNotScape>0</canNotScape>
+			<confusion>0</confusion>
+			<curse>0</curse>
+			<embargo>0</embargo>
+			<encore>0</encore>
+			<flinch>0</flinch>
+			<healBlock>0</healBlock>
+			<identified>0</identified>
+			<infatuation>0</infatuation>
+			<leechSeed>0</leechSeed>
+			<nightmare>0</nightmare>
+			<perishSong>0</perishSong>
+			<taunt>0</taunt>
+			<telekinesis>0</telekinesis>
+			<torment>0</torment>
+		</modifierVolatileStatus>
+		<probabilityModifierVolatileStatus>0</probabilityModifierVolatileStatus>
+
+		<modifierEnemyVolatileStatus>
+			<bound>0</bound>
+			<canNotScape>0</canNotScape>
+			<confusion>0</confusion>
+			<curse>0</curse>
+			<embargo>0</embargo>
+			<encore>0</encore>
+			<flinch>0</flinch>
+			<healBlock>0</healBlock>
+			<identified>0</identified>
+			<infatuation>0</infatuation>
+			<leechSeed>0</leechSeed>
+			<nightmare>0</nightmare>
+			<perishSong>0</perishSong>
+			<taunt>0</taunt>
+			<telekinesis>0</telekinesis>
+			<torment>0</torment>
+		</modifierEnemyVolatileStatus>
+		<probabilityModifierEnemyVolatileStatus>0</probabilityModifierEnemyVolatileStatus>
+	</move>
 	
 	
 </moves>

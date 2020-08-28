@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
+using System.Xml.Linq;
 
 namespace PokemonShowdown.Pokemon
 {
@@ -30,15 +33,17 @@ namespace PokemonShowdown.Pokemon
        
         private byte probabilityModifierStats; //probability of making a state change when using the move. Measured in percentage
         private byte probabilityModifierEnemyStats; //probability of making a state change when using the move. Measured in percentage    
+        private byte probabilityModifierStatus; //probability of making a status change when using the move. Measured in percentage
         private byte probabilityModifierEnemyStatus; //probability of making a status change when using the move. Measured in percentage
         private byte probabilityModifierVolatileStatus; //probability of making a volatile status change when using the move. Measured in percentage
         private byte probabilityModifierEnemyVolatileStatus; //probability of making a volatile status change when using the move. Measured in percentage
 
-
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public byte Repeat { get; set; } //How many times the movement is repeated after the first use
         public sbyte Recover { get; set; } //percentage of life gained based on damage done. If this attribute is negative, instead of recover will be a recoil of health.
+        public bool[] ModifierStatus { get; set; }
         public bool[] ModifierEnemyStatus { get; set; }//It indicates the affected status of the pokémon that receives movement and how much it goes up or down.
         public bool[] ModifierVolatileStatus { get; set; }//It indicates the affected volatile status of the pokémon that receives movement and how much it goes up or down.
         public bool[] ModifierEnemyVolatileStatus { get; set; }//It indicates the affected volatile status of the pokémon that receives movement and how much it goes up or down.
@@ -61,6 +66,17 @@ namespace PokemonShowdown.Pokemon
         {
 
             return;
+        }
+
+        #endregion
+
+        #region Static Methods
+
+        public static PokeMove Zero()
+        {
+
+
+            return null;
         }
         #endregion
 
@@ -111,7 +127,7 @@ namespace PokemonShowdown.Pokemon
         }
         
         
-        public sbyte[] ModifierStatistics
+        public sbyte[] ModifierStats
         { 
             get{ return modifierStats; }
             set
@@ -161,6 +177,17 @@ namespace PokemonShowdown.Pokemon
                 if (probabilityModifierEnemyStats > 100)
                     probabilityModifierEnemyStats = 0;
                 else probabilityModifierEnemyStats = value;
+            }
+        }
+
+        public byte ProbabilityModifierStatus
+        {
+            get { return probabilityModifierStatus; }
+            set
+            {
+                if (probabilityModifierStatus > 100)
+                    probabilityModifierStatus = 0;
+                else probabilityModifierStatus = value;
             }
         }
 
