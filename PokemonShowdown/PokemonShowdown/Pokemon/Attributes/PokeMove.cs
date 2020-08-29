@@ -12,6 +12,7 @@ namespace PokemonShowdown.Pokemon
     class PokeMove
     {
         #region Static Attributes
+
         public static string[]  TypeMoveNames = new string[] {
             "Physical", "Special", "State"
         };
@@ -26,7 +27,9 @@ namespace PokemonShowdown.Pokemon
         private byte type; //
         private byte category; //
         private byte accuarcy; //
-        private sbyte damage; //damage done by movement
+        private sbyte power; //damage done by movement
+        private byte target;
+        private byte priority;
 
         private sbyte[] modifierStats; //It indicates the affected statistic of the pokémon that has used the movement and how much it goes up or down. Depends on sign of the attribute.
         private sbyte[] modifierEnemyStats; //It indicates the affected statistic of the pokémon that receives movement and how much it goes up or down.       
@@ -42,13 +45,14 @@ namespace PokemonShowdown.Pokemon
         public string Name { get; set; }
         public string Description { get; set; }
         public byte Repeat { get; set; } //How many times the movement is repeated after the first use
+        public byte RepeatInTurn { get; set; } //How many times the movement is repeated after the first use
         public sbyte Recover { get; set; } //percentage of life gained based on damage done. If this attribute is negative, instead of recover will be a recoil of health.
+        public byte PP { get; set; }
+        public bool Contact { get; set; }
         public bool[] ModifierStatus { get; set; }
         public bool[] ModifierEnemyStatus { get; set; }//It indicates the affected status of the pokémon that receives movement and how much it goes up or down.
         public bool[] ModifierVolatileStatus { get; set; }//It indicates the affected volatile status of the pokémon that receives movement and how much it goes up or down.
         public bool[] ModifierEnemyVolatileStatus { get; set; }//It indicates the affected volatile status of the pokémon that receives movement and how much it goes up or down.
-
-
 
         #endregion
 
@@ -116,17 +120,39 @@ namespace PokemonShowdown.Pokemon
             }
         }
 
-        public sbyte Damage { 
-            get{ return damage; }
+        public sbyte Power { 
+            get{ return power; }
             set
             {
                 if (value < -1)
-                    damage = value;
-                else damage = 0;
+                    power = value;
+                else power = 0;
             }
         }
-        
-        
+
+        public byte Target
+        {
+            get { return target; }
+            set
+            {
+                if (value < -1)
+                    target = value;
+                else target = 0;
+            }
+        }
+
+        public byte Priority
+        {
+            get { return priority; }
+            set
+            {
+                if (value < -1)
+                    priority = value;
+                else priority = 0;
+            }
+        }
+
+
         public sbyte[] ModifierStats
         { 
             get{ return modifierStats; }

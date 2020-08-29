@@ -6,9 +6,13 @@
 		<type>0</type>
 		<category>0</category>
 		<accuarcy>0</accuarcy>
-		<damage>0</damage>
+		<power>0</power>
 		<recover>0</recover>
 		<repeat>0</repeat>
+		<target>0</target>
+		<pp>0</pp>
+		<contact>false</contact>
+		<priority>0</priority>
 		
 		<modifierStats>
 			<health>0</health>

@@ -4,6 +4,12 @@
     <Compile Update="Forms\Index.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\MovesListTools\AddOrUpdateMoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MovesListTools\SearchMoveByName.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\PokedexTools\AddOrUpdatePokemonForm.cs">
       <SubType>Form</SubType>
     </Compile>

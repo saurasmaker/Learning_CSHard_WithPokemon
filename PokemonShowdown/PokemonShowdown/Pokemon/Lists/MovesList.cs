@@ -179,10 +179,13 @@ namespace PokemonShowdown.Pokemon
             move.Add(new XElement("type", m.Type));
             move.Add(new XElement("category", m.Category));
             move.Add(new XElement("accuarcy", m.Accuarcy));
-            move.Add(new XElement("damage", m.Damage));
+            move.Add(new XElement("damage", m.Power));
             move.Add(new XElement("recover", m.Recover));
             move.Add(new XElement("repeat", m.Repeat));
-
+            move.Add(new XElement("target", m.Target));
+            move.Add(new XElement("pp", m.PP));
+            move.Add(new XElement("contact",m.Contact ? "true" : "false"));
+            move.Add(new XElement("priority", m.Priority));
 
             XElement modifierStats = new XElement("modifierStats");
             modifierStats.Add(new XElement("health", m.ModifierStats[PokeStat.Health]));
@@ -288,8 +291,12 @@ namespace PokemonShowdown.Pokemon
             p.Type = Convert.ToByte(e.Element("type").Value);
             p.Category = Convert.ToByte(e.Element("category").Value);
             p.Accuarcy = Convert.ToByte(e.Element("accuarcy").Value);
-            p.Damage = Convert.ToSByte(e.Element("damage").Value);
+            p.Power = Convert.ToSByte(e.Element("power").Value);
             p.Recover= Convert.ToSByte(e.Element("recover").Value);
+            p.Target = Convert.ToByte(e.Element("target").Value);
+            p.PP = Convert.ToByte(e.Element("pp").Value);
+            p.Contact  = e.Element("contact").Value.Equals("true") ? true : false;
+            p.Priority = Convert.ToByte(e.Element("priority").Value);
 
             XElement modifierStats = e.Element("modifierStats");
             for (int i = 0; i < modifierStats.Elements().Count(); ++i)
@@ -358,9 +365,13 @@ namespace PokemonShowdown.Pokemon
             move.Element("type").Value = m.Type.ToString();
             move.Element("category").Value = m.Category.ToString();
             move.Element("accuarcy").Value = m.Accuarcy.ToString();
-            move.Element("damage").Value = m.Damage.ToString();
+            move.Element("power").Value = m.Power.ToString();
             move.Element("recover").Value = m.Recover.ToString();
             move.Element("repeat").Value = m.Repeat.ToString();
+            move.Element("target").Value = m.Target.ToString();
+            move.Element("pp").Value = m.PP.ToString();
+            move.Element("contact").Value = m.Contact ? "true" : "false";
+            move.Element("priority").Value = m.Priority.ToString();
 
 
             XElement modifierStats = move.Element("modifierStats");
