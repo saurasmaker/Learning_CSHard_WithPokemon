@@ -29,10 +29,20 @@ namespace PokemonShowdown.Forms
             ShowSubmenu(panelPokedexToolsSubmenu);
         }
 
+        private void buttonMovesTools_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(panelMovesTools);
+        }
+
         private void btnTeams_Click(object sender, EventArgs e)
         {
             ShowSubmenu(panelTeamsSubmenu);
 
+        }
+
+        private void buttonItemsTools_Click(object sender, EventArgs e)
+        {
+            ShowSubmenu(panelItemsTools);
         }
 
         Form activeForm = null;
@@ -55,7 +65,9 @@ namespace PokemonShowdown.Forms
         private void HideSubMenus()
         {
             panelPokedexToolsSubmenu.Visible = false;
+            panelMovesTools.Visible = false;
             panelTeamsSubmenu.Visible = false;
+            panelItemsTools.Visible = false;
         }
 
 
@@ -90,5 +102,7 @@ namespace PokemonShowdown.Forms
         {
             new SearchPokemonByName(this, SearchPokemonByName.Remove).Show();
         }
+
+        
     }
 }

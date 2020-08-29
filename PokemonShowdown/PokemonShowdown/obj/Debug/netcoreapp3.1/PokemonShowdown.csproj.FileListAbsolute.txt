@@ -72,3 +72,5 @@ D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CS
 D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.dll
 D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\bin\Debug\netcoreapp3.1\PokemonShowdown.pdb
 D:\Alba\Escritorio\Programación Iván\Proyectos_Programacion\CSharp\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.genruntimeconfig.cache
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.MovesListTools.AddOrUpdateMoveForm.resources
+C:\Users\saura\Proyectos_Programacion\C#\Learning_CSharp_WithPokemon\PokemonShowdown\PokemonShowdown\obj\Debug\netcoreapp3.1\PokemonShowdown.Forms.MovesListTools.SearchMoveByName.resources
