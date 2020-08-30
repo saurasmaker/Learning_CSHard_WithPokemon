@@ -181,7 +181,8 @@ namespace PokemonShowdown.Pokemon
             move.Add(new XElement("accuarcy", m.Accuarcy));
             move.Add(new XElement("damage", m.Power));
             move.Add(new XElement("recover", m.Recover));
-            move.Add(new XElement("repeat", m.Repeat));
+            move.Add(new XElement("repetitions", m.Repetitions));
+            move.Add(new XElement("repetitionsInTurn", m.RepetitionsInTurn));
             move.Add(new XElement("target", m.Target));
             move.Add(new XElement("pp", m.PP));
             move.Add(new XElement("contact",m.Contact ? "true" : "false"));
@@ -367,7 +368,8 @@ namespace PokemonShowdown.Pokemon
             move.Element("accuarcy").Value = m.Accuarcy.ToString();
             move.Element("power").Value = m.Power.ToString();
             move.Element("recover").Value = m.Recover.ToString();
-            move.Element("repeat").Value = m.Repeat.ToString();
+            move.Element("repetitions").Value = m.Repetitions.ToString();
+            move.Element("repetitionsInTurn").Value = m.RepetitionsInTurn.ToString();
             move.Element("target").Value = m.Target.ToString();
             move.Element("pp").Value = m.PP.ToString();
             move.Element("contact").Value = m.Contact ? "true" : "false";

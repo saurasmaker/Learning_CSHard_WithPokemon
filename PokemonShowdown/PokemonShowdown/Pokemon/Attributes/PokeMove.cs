@@ -21,6 +21,14 @@ namespace PokemonShowdown.Pokemon
         public static byte Special = 1; 
         public static byte State = 2;
 
+        public static string[] TargetNames = new string[] {
+            "Physical", "Special", "State"
+        };
+
+        public static byte target1 = 0;
+        public static byte target2 = 1;
+        public static byte target3 = 2;
+
         #endregion
 
         #region Attributes
@@ -44,8 +52,8 @@ namespace PokemonShowdown.Pokemon
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public byte Repeat { get; set; } //How many times the movement is repeated after the first use
-        public byte RepeatInTurn { get; set; } //How many times the movement is repeated after the first use
+        public byte Repetitions { get; set; } //How many times the movement is repeated after the first use
+        public byte RepetitionsInTurn { get; set; } //How many times the movement is repeated after the first use
         public sbyte Recover { get; set; } //percentage of life gained based on damage done. If this attribute is negative, instead of recover will be a recoil of health.
         public byte PP { get; set; }
         public bool Contact { get; set; }

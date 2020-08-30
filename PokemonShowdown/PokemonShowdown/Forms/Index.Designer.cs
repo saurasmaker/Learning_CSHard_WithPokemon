@@ -104,7 +104,7 @@
             // 
             // statusStrip
             // 
-            this.statusStrip.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip.Location = new System.Drawing.Point(0, 581);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1055, 22);
             this.statusStrip.TabIndex = 0;
@@ -404,7 +404,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 49);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(250, 490);
+            this.panelLeft.Size = new System.Drawing.Size(250, 532);
             this.panelLeft.TabIndex = 3;
             // 
             // panelItemsTools
@@ -791,7 +791,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 49);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(805, 490);
+            this.panelChildForm.Size = new System.Drawing.Size(805, 532);
             this.panelChildForm.TabIndex = 4;
             // 
             // imageList
@@ -805,7 +805,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 561);
+            this.ClientSize = new System.Drawing.Size(1055, 603);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.toolStrip);

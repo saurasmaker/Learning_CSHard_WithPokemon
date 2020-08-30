@@ -20,3 +20,4 @@
 29/08/2020 19:00:40 => Application initilizated.
 29/08/2020 19:10:25 => Application initilizated.
 29/08/2020 19:17:11 => Application initilizated.
+30/08/2020 12:30:16 => Application initilizated.

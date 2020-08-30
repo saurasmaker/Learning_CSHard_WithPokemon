@@ -14,5 +14,6 @@ namespace PokemonShowdown.Forms.MovesListTools
         {
             InitializeComponent();
         }
+
     }
 }
